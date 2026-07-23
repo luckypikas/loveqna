@@ -1,3 +1,7 @@
+Absolutely — here is a clean reusable template file you can paste into GitHub. It separates the master prompt, input template, and output format so you can maintain each part independently.
+
+Investigative Relationship Documentary Engine
+text
 # Investigative Relationship Documentary Engine v2
 
 ## Purpose
@@ -127,3 +131,125 @@ Before the rewrite, always consider these:
 
 ## Output Goal
 Turn messy material into a documentary-style relationship narrative that feels complete, consistent, and easy to narrate.
+Output Format Template
+text
+## Central Question
+[Restate the main investigative question.]
+
+## Title Options
+1. [Curiosity title]
+2. [Curiosity title]
+3. [Direct title]
+4. [Direct title]
+5. [Emotional title]
+6. [Emotional title]
+7. [Safer title]
+8. [Recommended title]
+
+## Story Summary
+[2–4 sentences summarizing the story.]
+
+## Investigative Questions
+- [Question 1]
+- [Question 2]
+- [Question 3]
+- [Question 4]
+- [Question 5]
+
+## Key Facts
+- [Confirmed fact 1]
+- [Confirmed fact 2]
+- [Confirmed fact 3]
+
+## Unknowns or Gaps
+- [Unknown 1]
+- [Unknown 2]
+- [Unknown 3]
+
+## Best Documentary Angle
+[Explain the framing.]
+
+## Narrative Outline
+- Hook: [hook summary]
+- Setup: [setup summary]
+- Early clues: [early clues summary]
+- Escalation: [escalation summary]
+- Turning point: [turning point summary]
+- Reveal or insight: [reveal summary]
+- Closing thought: [closing summary]
+
+## Rewrite Draft
+[Full documentary-style narration.]
+
+## Optional Short Version
+[Condensed version if useful.]
+Input Template Example
+text
+## MODE
+Brain Dump
+
+## TOPIC
+Jerry and Grace relationship breakdown
+
+## CENTRAL QUESTION
+What went wrong in this relationship?
+
+## SOURCE MATERIAL
+[Paste notes, transcript, rough story, or observations here.]
+
+## KNOWN FACTS
+- [Fact 1]
+- [Fact 2]
+- [Fact 3]
+
+## SUSPECTED OR UNCERTAIN
+- [Unclear point 1]
+- [Unclear point 2]
+
+## MUST INCLUDE
+- Control conflict
+- Blended-family tension
+- Missing doors as a symbolic detail
+- Therapy
+- Separation and later reunion
+
+## AVOID
+- Overusing zodiac signs as the explanation
+- Making the story sound like gossip
+- Blaming only one person
+
+## TONE
+Documentary, calm, investigative, emotionally grounded.
+
+## LENGTH
+10–15 minutes
+Recommended GitHub Layout
+text
+/relationship-documentary-engine/
+  MASTER_PROMPT.md
+  INPUT_TEMPLATE.md
+  OUTPUT_TEMPLATE.md
+  SAMPLE_JERRY_GRACE.md
+  SAMPLE_JODI_ARIAS.md
+  SAMPLE_OPENINGS.md
+  TITLE_LIBRARY.md
+Suggested companion files
+SAMPLE_JERRY_GRACE.md — your first working example.
+
+SAMPLE_OPENINGS.md — your recurring hook formulas.
+
+TITLE_LIBRARY.md — optional later, if you want a swipe file of recurring title styles.
+
+Usage
+Paste the source material into the input template.
+
+Run it through the master prompt.
+
+Use the output template to keep the structure consistent.
+
+Save strong examples back into the sample library.
+
+Note
+This structure keeps the prompt lean while letting you grow the example library over time. That is usually easier to maintain than stuffing every sample into the prompt itself.
+
+If you want, I can next turn this into a real GitHub-ready file set with each file separated exactly as MASTER_PROMPT.md, INPUT_TEMPLATE.md, OUTPUT_TEMPLATE.md, and SAMPLE_JERRY_GRACE.md.yle relationship narrative that feels complete, consistent, and easy to narrate.
