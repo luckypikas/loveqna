@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>LoveQnA Library</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:Arial, Helvetica, sans-serif;
+
+    background:#FFF8E7;
+
+    color:#1A1A1A;
+
+}
+
+/* ---------- TOP BAR ---------- */
+
+header{
+
+    background:white;
+
+    border-bottom:1px solid #ddd;
+
+    padding:18px 40px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    position:sticky;
+
+    top:0;
+
+}
+
+.logo{
+
+    font-size:30px;
+
+    font-weight:bold;
+
+    color:#501A1A;
+
+}
+
+.topnav{
+
+    display:flex;
+
+    gap:25px;
+
+}
+
+.topnav a{
+
+    text-decoration:none;
+
+    color:#1A1A1A;
+
+    font-weight:bold;
+
+}
+
+.topnav a:hover{
+
+    color:#501A1A;
+
+}
+
+/* ---------- LAYOUT ---------- */
+
+.container{
+
+    display:flex;
+
+    min-height:calc(100vh - 70px);
+
+}
+
+/* ---------- SIDEBAR ---------- */
+
+.sidebar{
+
+    width:240px;
+
+    background:white;
+
+    border-right:1px solid #ddd;
+
+    padding:25px;
+
+}
+
+.sidebar h3{
+
+    margin-bottom:20px;
+
+    color:#501A1A;
+
+}
+
+.sidebar a{
+
+    display:block;
+
+    text-decoration:none;
+
+    color:#1A1A1A;
+
+    margin-bottom:15px;
+
+}
+
+.sidebar a:hover{
+
+    color:#501A1A;
+
+}
+
+/* ---------- CONTENT ---------- */
+
+.content{
+
+    flex:1;
+
+    padding:40px;
+
+}
+
+.card{
+
+    background:white;
+
+    border-radius:12px;
+
+    padding:35px;
+
+    box-shadow:0 2px 8px rgba(0,0,0,.08);
+
+}
+
+.card h1{
+
+    color:#501A1A;
+
+    margin-bottom:20px;
+
+}
+
+.card p{
+
+    line-height:1.8;
+
+    margin-bottom:20px;
+
+}
+
+/* ---------- BUTTON ---------- */
+
+.button{
+
+    display:inline-block;
+
+    background:#501A1A;
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:12px 24px;
+
+    border-radius:8px;
+
+}
+
+.button:hover{
+
+    opacity:.9;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+
+LoveQnA
+
+</div>
+
+<nav class="topnav">
+
+<a href="#">Home</a>
+
+<a href="#">BOT</a>
+
+<a href="#">Wiki</a>
+
+<a href="#">Dictionary</a>
+
+<a href="#">Archives</a>
+
+<a href="#">About</a>
+
+</nav>
+
+</header>
+
+<div class="container">
+
+<aside class="sidebar">
+
+<h3>Contents</h3>
+
+<a href="#">Getting Started</a>
+
+<a href="#">Relationships</a>
+
+<a href="#">Dating</a>
+
+<a href="#">Marriage</a>
+
+<a href="#">Communication</a>
+
+<a href="#">Manipulation</a>
+
+<a href="#">Gaslighting</a>
+
+<a href="#">Love Bombing</a>
+
+<a href="#">Red Flags</a>
+
+<a href="#">Green Flags</a>
+
+<a href="#">Case Studies</a>
+
+<a href="#">Resources</a>
+
+</aside>
+
+<main class="content">
+
+<div class="card">
+
+<h1>Welcome to LoveQnA</h1>
+
+<p>
+
+This area displays the selected page from the navigation menu.
+
+Use the sidebar to browse articles, or use the navigation bar to move between major sections of the website.
+
+</p>
+
+<p>
+
+This layout is intentionally simple so it can grow into a large educational library while remaining easy to maintain on GitHub Pages.
+
+</p>
+
+<a class="button" href="#">
+
+Start Reading
+
+</a>
+
+</div>
+
+</main>
+
+</div>
+
+</body>
+
+</html>
