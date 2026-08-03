@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<title>Article Title | LoveQnA</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:Arial, Helvetica, sans-serif;
+
+    background:#FFF8E7;
+
+    color:#1A1A1A;
+
+    line-height:1.8;
+
+}
+
+/* ---------------- HEADER ---------------- */
+
+header{
+
+    background:white;
+
+    border-bottom:1px solid #ddd;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:18px 40px;
+
+    position:sticky;
+
+    top:0;
+
+}
+
+.logo{
+
+    font-size:28px;
+
+    font-weight:bold;
+
+    color:#501A1A;
+
+}
+
+nav{
+
+    display:flex;
+
+    gap:25px;
+
+}
+
+nav a{
+
+    color:#1A1A1A;
+
+    text-decoration:none;
+
+    font-weight:bold;
+
+}
+
+nav a:hover{
+
+    color:#501A1A;
+
+}
+
+/* ---------------- LAYOUT ---------------- */
+
+.container{
+
+    display:flex;
+
+    min-height:100vh;
+
+}
+
+/* ---------------- SIDEBAR ---------------- */
+
+.sidebar{
+
+    width:240px;
+
+    background:white;
+
+    border-right:1px solid #ddd;
+
+    padding:25px;
+
+}
+
+.sidebar h3{
+
+    color:#501A1A;
+
+    margin-bottom:20px;
+
+}
+
+.sidebar a{
+
+    display:block;
+
+    color:#1A1A1A;
+
+    text-decoration:none;
+
+    margin-bottom:14px;
+
+}
+
+.sidebar a:hover{
+
+    color:#501A1A;
+
+}
+
+/* ---------------- ARTICLE ---------------- */
+
+main{
+
+    flex:1;
+
+    padding:45px;
+
+}
+
+.breadcrumb{
+
+    font-size:14px;
+
+    margin-bottom:20px;
+
+    color:#666;
+
+}
+
+.article{
+
+    background:white;
+
+    border-radius:12px;
+
+    padding:40px;
+
+    box-shadow:0 2px 8px rgba(0,0,0,.08);
+
+}
+
+.article h1{
+
+    color:#501A1A;
+
+    margin-bottom:10px;
+
+}
+
+.meta{
+
+    color:#777;
+
+    font-size:14px;
+
+    margin-bottom:35px;
+
+}
+
+.article h2{
+
+    margin-top:40px;
+
+    color:#501A1A;
+
+}
+
+.article p{
+
+    margin-top:20px;
+
+}
+
+blockquote{
+
+    border-left:5px solid #501A1A;
+
+    padding-left:20px;
+
+    margin:30px 0;
+
+    font-style:italic;
+
+}
+
+/* ---------------- TAGS ---------------- */
+
+.tags{
+
+    margin-top:50px;
+
+}
+
+.tag{
+
+    display:inline-block;
+
+    background:#501A1A;
+
+    color:white;
+
+    padding:8px 14px;
+
+    border-radius:20px;
+
+    margin:5px;
+
+    text-decoration:none;
+
+}
+
+/* ---------------- RELATED ---------------- */
+
+.related{
+
+    margin-top:50px;
+
+}
+
+.related ul{
+
+    margin-top:15px;
+
+    padding-left:20px;
+
+}
+
+/* ---------------- NAVIGATION ---------------- */
+
+.page-nav{
+
+    margin-top:60px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    flex-wrap:wrap;
+
+}
+
+.page-nav a{
+
+    text-decoration:none;
+
+    background:#501A1A;
+
+    color:white;
+
+    padding:12px 20px;
+
+    border-radius:8px;
+
+    margin-top:10px;
+
+}
+
+/* ---------------- FOOTER ---------------- */
+
+footer{
+
+    text-align:center;
+
+    padding:40px;
+
+    color:#777;
+
+}
+
+/* ---------------- MOBILE ---------------- */
+
+@media(max-width:900px){
+
+.container{
+
+    flex-direction:column;
+
+}
+
+.sidebar{
+
+    width:100%;
+
+    border-right:none;
+
+    border-bottom:1px solid #ddd;
+
+}
+
+main{
+
+    padding:20px;
+
+}
+
+header{
+
+    flex-direction:column;
+
+    gap:15px;
+
+}
+
+nav{
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+}
+
+}
+
+</style>
+
+</head>
+
+<body id="top">
+
+<header>
+
+<div class="logo">
+
+LoveQnA
+
+</div>
+
+<nav>
+
+<a href="index.html">Home</a>
+
+<a href="https://poe.com/NOLA-LoveQnA"
+   target="_blank">
+    BOT
+</a>
+
+<a href="https://github.com/luckypikas/loveqna/wiki">
+    Wiki
+</a>
+
+<a href="https://luckypikas.github.io/loveqna/dictionary.html">Dictionary</a>  
+
+<a href="https://luckypikas.github.io/loveqna/archives.html">Archives</a>  
+
+<a href="https://luckypikas.github.io/loveqna/about.html">About LoveQnA</a>  
+
+</nav>
+
+</header>
+
+<div class="container">
+
+<aside class="sidebar">
+
+<h3>CONTENTS</h3>
+
+<a href="https://luckypikas.github.io/loveqna/">LoveQnA</a> 
+
+<a href="https://luckypikas.github.io/loveqna/contents.html">Contents Page</a> 
+
+<a href="https://luckypikas.github.io/loveqna/dictionary.html">Dictionary</a>  
+
+<a href="https://luckypikas.github.io/loveqna/relationship-health.html">Relationship Stress</a>  
+
+<a href="https://loveqna.substack.com/">LoveQnA Articles</a>  
+
+<a href="https://www.youtube.com/@loveqnablog">LoveQnA Videos</a> 
+
+<a href="https://luckypikas.github.io/loveqna/wiki.html">Wiki</a> 
+
+<a href="https://poe.com/NOLA-LoveQnA">NOLA</a> 
+
+<a href="https://luckypikas.github.io/loveqna/vibe-control.html">Vibe Control Links</a> 
+
+<a href="https://luckypikas.github.io/loveqna/legacy-dynasty.html">Legacy/Dynasty Links</a> 
+
+<a href="https://luckypikas.github.io/loveqna/ebooks.html">Ebooks</a> 
+
+<a href="https://luckypikas.github.io/loveqna/ai-personas.html">A.I. Personas</a> 
+
+<a href="https://luckypikas.github.io/loveqna/luckypika-studios.html">LoveQnA Documentaries</a>
+
+<a href="https://luckypikas.github.io/loveqna/resources.html">Resources</a>
+
+</aside>
+
+<main>
+
+<div class="breadcrumb">
+
+Home > Psychology > Article
+
+</div>
+
+<div class="article">
+
+<h1>
+
+Article Title
+
+</h1>
+
+<div class="meta">
+
+Category: Psychology
+
+•
+
+Reading Time: 8 minutes
+
+•
+
+Updated: July 2026
+
+</div>
+
+<p>
+
+Write your article here.
+
+Replace this text with your content.
+
+</p>
+
+<h2>
+
+Heading
+
+</h2>
+
+<p>
+
+Continue writing...
+
+</p>
+
+<blockquote>
+
+Example quote or important takeaway.
+
+</blockquote>
+
+<p>
+
+Continue writing...
+
+</p>
+
+<div class="tags">
+
+<h2>Tags</h2>
+
+<a class="tag" href="#">Psychology</a>
+
+<a class="tag" href="#">Relationships</a>
+
+<a class="tag" href="#">Communication</a>
+
+<a class="tag" href="#">Manipulation</a>
+
+</div>
+
+<div class="related">
+
+<h2>Related Articles</h2>
+
+<ul>
+
+<li><a href="#">Healthy Boundaries</a></li>
+
+<li><a href="#">Emotional Abuse</a></li>
+
+<li><a href="#">Love Bombing</a></li>
+
+<li><a href="#">Trust Building</a></li>
+
+</ul>
+
+</div>
+
+<div class="page-nav">
+
+<a href="previous-article.html">
+
+← Previous
+
+</a>
+
+<a href="#top">
+
+↑ Back to Top
+
+</a>
+
+<a href="next-article.html">
+
+Next →
+
+</a>
+
+</div>
+
+</div>
+
+</main>
+
+</div>
+
+<footer>
+
+© 2026 LoveQnA
+
+</footer>
+
+</body>
+
+</html>
