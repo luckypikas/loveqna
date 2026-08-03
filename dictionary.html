@@ -1,550 +1,473 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
 <meta charset="UTF-8">
-
-<meta name="viewport"
-      content="width=device-width, initial-scale=1.0">
-
-<title>Article Title | LoveQnA</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The LoveQnA Dictionary | Lucky Pikas Studios</title>
 
 <style>
-
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
 }
-
 html{
     scroll-behavior:smooth;
 }
-
 body{
-
     font-family:Arial, Helvetica, sans-serif;
-
     background:#FFF8E7;
-
     color:#1A1A1A;
-
     line-height:1.8;
-
 }
 
 /* ---------------- HEADER ---------------- */
-
 header{
-
     background:white;
-
     border-bottom:1px solid #ddd;
-
     display:flex;
-
     justify-content:space-between;
-
     align-items:center;
-
     padding:18px 40px;
-
     position:sticky;
-
     top:0;
-
+    z-index: 1000;
 }
-
 .logo{
-
     font-size:28px;
-
     font-weight:bold;
-
     color:#501A1A;
-
 }
-
 nav{
-
     display:flex;
-
     gap:25px;
-
 }
-
 nav a{
-
     color:#1A1A1A;
-
     text-decoration:none;
-
     font-weight:bold;
-
 }
-
 nav a:hover{
-
     color:#501A1A;
-
 }
 
 /* ---------------- LAYOUT ---------------- */
-
 .container{
-
     display:flex;
-
     min-height:100vh;
-
 }
 
 /* ---------------- SIDEBAR ---------------- */
-
 .sidebar{
-
     width:240px;
-
     background:white;
-
     border-right:1px solid #ddd;
-
     padding:25px;
-
 }
-
 .sidebar h3{
-
     color:#501A1A;
-
     margin-bottom:20px;
-
 }
-
 .sidebar a{
-
     display:block;
-
     color:#1A1A1A;
-
     text-decoration:none;
-
     margin-bottom:14px;
-
 }
-
 .sidebar a:hover{
-
     color:#501A1A;
-
 }
 
 /* ---------------- ARTICLE ---------------- */
-
 main{
-
     flex:1;
-
     padding:45px;
-
 }
-
 .breadcrumb{
-
     font-size:14px;
-
     margin-bottom:20px;
-
     color:#666;
-
 }
-
 .article{
-
     background:white;
-
     border-radius:12px;
-
     padding:40px;
-
     box-shadow:0 2px 8px rgba(0,0,0,.08);
-
 }
-
 .article h1{
-
     color:#501A1A;
-
     margin-bottom:10px;
-
 }
-
 .meta{
-
     color:#777;
-
     font-size:14px;
-
     margin-bottom:35px;
-
 }
-
 .article h2{
-
     margin-top:40px;
-
     color:#501A1A;
-
+    border-bottom: 2px solid #eee;
+    padding-bottom: 5px;
 }
-
+.article h3 {
+    margin-top: 25px;
+    color: #333;
+}
 .article p{
-
-    margin-top:20px;
-
+    margin-top:10px;
 }
-
+.article ul {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    padding-left: 40px;
+}
+.article li {
+    margin-bottom: 8px;
+}
 blockquote{
-
+    background-color: #f9f9f9;
     border-left:5px solid #501A1A;
-
-    padding-left:20px;
-
+    padding: 15px 20px;
     margin:30px 0;
-
     font-style:italic;
-
+    font-size: 1.1em;
+    color: #333;
 }
 
 /* ---------------- TAGS ---------------- */
-
 .tags{
-
     margin-top:50px;
-
 }
-
 .tag{
-
     display:inline-block;
-
     background:#501A1A;
-
     color:white;
-
     padding:8px 14px;
-
     border-radius:20px;
-
     margin:5px;
-
     text-decoration:none;
-
-}
-
-/* ---------------- RELATED ---------------- */
-
-.related{
-
-    margin-top:50px;
-
-}
-
-.related ul{
-
-    margin-top:15px;
-
-    padding-left:20px;
-
 }
 
 /* ---------------- NAVIGATION ---------------- */
-
 .page-nav{
-
     margin-top:60px;
-
     display:flex;
-
     justify-content:space-between;
-
     flex-wrap:wrap;
-
 }
-
 .page-nav a{
-
     text-decoration:none;
-
     background:#501A1A;
-
     color:white;
-
     padding:12px 20px;
-
     border-radius:8px;
-
     margin-top:10px;
-
 }
 
 /* ---------------- FOOTER ---------------- */
-
 footer{
-
     text-align:center;
-
     padding:40px;
-
     color:#777;
-
 }
 
 /* ---------------- MOBILE ---------------- */
-
 @media(max-width:900px){
-
-.container{
-
-    flex-direction:column;
-
+    .container{
+        flex-direction:column;
+    }
+    .sidebar{
+        width:100%;
+        border-right:none;
+        border-bottom:1px solid #ddd;
+    }
+    main{
+        padding:20px;
+    }
+    header{
+        flex-direction:column;
+        gap:15px;
+    }
+    nav{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
 }
-
-.sidebar{
-
-    width:100%;
-
-    border-right:none;
-
-    border-bottom:1px solid #ddd;
-
-}
-
-main{
-
-    padding:20px;
-
-}
-
-header{
-
-    flex-direction:column;
-
-    gap:15px;
-
-}
-
-nav{
-
-    flex-wrap:wrap;
-
-    justify-content:center;
-
-}
-
-}
-
 </style>
-
 </head>
 
 <body id="top">
 
 <header>
-
-<div class="logo">
-
-LoveQnA
-
-</div>
-
-<nav>
-
-<a href="index.html">Home</a>
-
-<a href="https://poe.com/NOLA-LoveQnA"
-   target="_blank">
-    BOT
-</a>
-
-<a href="https://github.com/luckypikas/loveqna/wiki">
-    Wiki
-</a>
-
-<a href="https://luckypikas.github.io/loveqna/dictionary.html">Dictionary</a>  
-
-<a href="https://luckypikas.github.io/loveqna/archives.html">Archives</a>  
-
-<a href="https://luckypikas.github.io/loveqna/about.html">About LoveQnA</a>  
-
-</nav>
-
+    <div class="logo">LoveQnA</div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="https://poe.com/NOLA-LoveQnA" target="_blank">BOT</a>
+        <a href="https://github.com/luckypikas/loveqna/wiki">Wiki</a>
+        <a href="https://luckypikas.github.io/loveqna/dictionary.html">Dictionary</a>  
+        <a href="https://luckypikas.github.io/loveqna/archives.html">Archives</a>  
+        <a href="https://luckypikas.github.io/loveqna/about.html">About</a>  
+    </nav>
 </header>
 
 <div class="container">
 
-<aside class="sidebar">
+    <aside class="sidebar">
+        <h3>CONTENTS</h3>
+        <a href="https://luckypikas.github.io/loveqna/">LoveQnA</a> 
+        <a href="https://luckypikas.github.io/loveqna/contents.html">Contents Page</a> 
+        <a href="https://luckypikas.github.io/loveqna/dictionary.html">Dictionary</a>  
+        <a href="https://luckypikas.github.io/loveqna/relationship-health.html">Relationship Stress</a>  
+        <a href="https://loveqna.substack.com/">LoveQnA Articles</a>  
+        <a href="https://www.youtube.com/@loveqnablog">LoveQnA Videos</a> 
+        <a href="https://github.com/luckypikas/loveqna/wiki">Wiki</a> 
+        <a href="https://poe.com/NOLA-LoveQnA">NOLA</a> 
+        <a href="https://luckypikas.github.io/loveqna/vibe-control.html">Vibe Control Links</a> 
+        <a href="https://luckypikas.github.io/loveqna/legacy-dynasty.html">Legacy/Dynasty Links</a> 
+        <a href="https://luckypikas.github.io/loveqna/ebooks.html">Ebooks</a> 
+        <a href="https://luckypikas.github.io/loveqna/ai-personas.html">A.I. Personas</a> 
+        <a href="https://luckypikas.github.io/loveqna/luckypika-studios.html">LoveQnA Documentaries</a>
+        <a href="https://luckypikas.github.io/loveqna/resources.html">Resources</a>
+    </aside>
+
+    <main>
+        <div class="breadcrumb">Home > Psychology > The Dictionary</div>
+
+        <div class="article">
+            <h1>🔥 The LoveQnA Dictionary of Deception 🔥</h1>
+            <div class="meta">• A glossary of Classic & Modern Relationship Terms (From the 60s to Today)</div>
+
+            <p>Welcome to the official lexicon of LoveQnA. This living document defines the street logic, psychological tactics, and classic game used in romantic relationships. *We will update this dictionary as we go along.*</p>
+
+            <h2>A - C</h2>
+            
+            <h3>A Catch 🎣🔥</h3>
+            <p><strong>Synonyms:</strong> A Winner, A Keeper</p>
+            <p>Someone who has all the qualities you’d want in a long-term partner. </p>
 
-<h3>CONTENTS</h3>
+            <h3>Abandon 🚪🏃‍♂️</h3>
+            <p>Leaving someone emotionally or physically with no warning.</p>
 
-<a href="https://luckypikas.github.io/loveqna/">LoveQnA</a> 
+            <h3>Best Friend 👫❤️</h3>
+            <p>A ride-or-die type who may or may not have romantic ties. Some claim this status while secretly catching feelings.</p>
 
-<a href="https://luckypikas.github.io/loveqna/contents.html">Contents Page</a> 
+            <h3>Big Mama 👑🍗</h3>
+            <p><strong>Synonyms:</strong> Boss Chick, Head Chick in Charge</p>
+            <p>A woman who calls the shots in a family or relationship.</p>
 
-<a href="https://luckypikas.github.io/loveqna/dictionary.html">Dictionary</a>  
+            <h3>Bodacious 🍑💋</h3>
+            <p><strong>Synonyms:</strong> Luscious, Thick, Voluptuous</p>
+            <p>A bold, curvy, fine woman with serious presence.</p>
 
-<a href="https://luckypikas.github.io/loveqna/relationship-health.html">Relationship Stress</a>  
+            <h3>Booty Call 📞🍑</h3>
+            <p>A relationship of convenience where intimacy is the main focus—usually late at night.</p>
 
-<a href="https://loveqna.substack.com/">LoveQnA Articles</a>  
+            <h3>Broad 🏠👜</h3>
+            <p><strong>Synonyms:</strong> Chick, Dame (old-school)</p>
+            <p>A casual term for a woman, sometimes affectionate, sometimes dismissive.</p>
 
-<a href="https://www.youtube.com/@loveqnablog">LoveQnA Videos</a> 
+            <blockquote>
+                <strong>💬 Old-School Love Wisdom:</strong><br>
+                "If someone only hits you up at night, you ain’t in their heart—just in their schedule."
+            </blockquote>
 
-<a href="https://github.com/luckypikas/loveqna/wiki">Wiki</a> 
+            <h3>Catfight 🐱💥</h3>
+            <p>A heated argument or physical fight between two women, usually over a man.</p>
 
-<a href="https://poe.com/NOLA-LoveQnA">NOLA</a> 
+            <h3>Cheater 🚩💔</h3>
+            <p>Someone who violates the relationship agreement by stepping out with someone else.</p>
 
-<a href="https://luckypikas.github.io/loveqna/vibe-control.html">Vibe Control Links</a> 
+            <h3>Collar Around His Neck ⛓️🐶</h3>
+            <p>A man who’s completely controlled by his partner.</p>
 
-<a href="https://luckypikas.github.io/loveqna/legacy-dynasty.html">Legacy/Dynasty Links</a> 
+            <h3>Communication 🗣️🔑</h3>
+            <p>The foundation of a healthy relationship. Bad communication = messy love life.</p>
 
-<a href="https://luckypikas.github.io/loveqna/ebooks.html">Ebooks</a> 
+            <h3>Cornball 🤡👞</h3>
+            <p>A lame, try-hard, or awkward person who thinks they got game but really don’t.</p>
 
-<a href="https://luckypikas.github.io/loveqna/ai-personas.html">A.I. Personas</a> 
 
-<a href="https://luckypikas.github.io/loveqna/luckypika-studios.html">LoveQnA Documentaries</a>
+            <h2>D - G</h2>
 
-<a href="https://luckypikas.github.io/loveqna/resources.html">Resources</a>
+            <h3>Dame 🎩👗</h3>
+            <p>An old-school word for a classy woman.</p>
 
-</aside>
+            <h3>DARVO 🛡️🐍</h3>
+            <p><strong>Acronym:</strong> Deny, Attack, Reverse Victim and Offender.</p>
+            <p>A highly toxic manipulation tactic. When confronted with proof of bad behavior, the abuser denies it, attacks the person confronting them, and flips the script to make themselves the victim.</p>
 
-<main>
+            <h3>Devotion 🕊️❤️</h3>
+            <p>Loyalty, love, and dedication to one person.</p>
 
-<div class="breadcrumb">
+            <h3>Dragging His/Her Feet 🐢⌛</h3>
+            <p>Taking too long to commit or make a decision in the relationship.</p>
 
-Home > Psychology > Article
+            <blockquote>
+                <strong>💬 Classic Relationship Truth:</strong><br>
+                "Love moves at two speeds: fast when it’s right, slow when someone’s stalling."
+            </blockquote>
 
-</div>
+            <h3>Emotional Support 🤗💖</h3>
+            <p>When one partner is there to listen, uplift, and encourage.</p>
 
-<div class="article">
+            <h3>Entertainment Value 🎭🎤</h3>
+            <p>A person’s ability to keep their partner engaged, entertained, and excited through:</p>
+            <ul>
+                <li>Humor 😆</li>
+                <li>Great conversation 🗣️</li>
+                <li>Taking them dancing/movies/shows 🎶🎬</li>
+                <li>Telling good stories 📖</li>
+                <li>Gossip & playful discussions 🤫</li>
+                <li>Having an interesting life 🌍</li>
+            </ul>
+            <p><em>Example: "He’s funny, charming, and always down for an adventure—his entertainment value is off the charts!"</em></p>
 
-<h1>
+            <blockquote>
+                <strong>💬 Entertainment Value Tip:</strong><br>
+                "People don’t stay because of looks or money alone. They stay because you make life exciting."
+            </blockquote>
 
-Article Title
+            <h3>False Accusation 🚨🙅‍♂️</h3>
+            <p>Lying on someone and making them look guilty.</p>
 
-</h1>
+            <h3>Financial Hostage 💳🔒</h3>
+            <p>A situation where one partner cannot leave the relationship because the other partner controls all the money, housing, or transportation.</p>
 
-<div class="meta">
+            <h3>Friends with Benefits 🔥👫</h3>
+            <p>A casual relationship that includes intimacy but no commitment.</p>
 
-Category: Psychology
+            <h3>Gaslighting 🕯️😵‍💫</h3>
+            <p>A form of psychological abuse where the abuser slowly manipulates the victim into questioning their own memory, sanity, or perception of reality.</p>
 
-•
+            <h3>Got Him/Her Trained 🎯🐕</h3>
+            <p>When one partner teaches the other how to behave or treat them right.</p>
 
-Reading Time: 8 minutes
 
-•
+            <h2>H - K</h2>
 
-Updated: July 2026
+            <h3>Hobosexual 🛋️💼</h3>
+            <p>A person who dates someone exclusively so they have a free place to sleep and do not have to pay rent.</p>
 
-</div>
+            <h3>Hottie 😍🔥</h3>
+            <p><strong>Synonyms:</strong> Stunner, Looker</p>
+            <p>Someone who turns heads wherever they go.</p>
 
-<p>
+            <h3>Innocent 👼💫</h3>
+            <p><strong>Synonyms:</strong> Sweet, Pure, Virgin</p>
+            <p>Someone naïve in relationships or unexposed to certain experiences.</p>
 
-Write your article here.
+            <blockquote>
+                <strong>💬 LoveQnA Classic Game:</strong><br>
+                "Game recognizes game, but real love recognizes real."
+            </blockquote>
 
-Replace this text with your content.
+            <h3>Intuition 👀✨</h3>
+            <p>That gut feeling when something ain’t right—or when it is. The body's natural evolutionary defense mechanism.</p>
 
-</p>
+            <h3>Kicked to the Curb 🚗🛑</h3>
+            <p>Getting dumped or rejected.</p>
 
-<h2>
 
-Heading
+            <h2>L - O</h2>
 
-</h2>
+            <h3>Loose Ends 🕵️‍♂️🤷‍♀️</h3>
+            <p>Unresolved relationship issues or unfinished drama.</p>
 
-<p>
+            <h3>Love Bombing 💣❤️</h3>
+            <p>An intense, overwhelming display of affection, gifts, and promises of a future together very early in a relationship, used strictly to trap and control a partner before the abuse begins.</p>
 
-Continue writing...
+            <h3>Low-Key Relationship 🔒💑</h3>
+            <p>A relationship kept private, either for personal reasons or secrecy.</p>
 
-</p>
+            <blockquote>
+                <strong>💬 Real Talk:</strong><br>
+                "If you gotta keep your love a secret, you better make sure you ain’t the secret."
+            </blockquote>
 
-<blockquote>
+            <h3>Lover’s Quarrel ⚡💋</h3>
+            <p>A heated argument between people in love.</p>
 
-Example quote or important takeaway.
+            <h3>Narcissist 🪞👑</h3>
+            <p>A partner who only cares about themselves, lacks empathy, and is deeply manipulative and controlling while demanding constant admiration.</p>
 
-</blockquote>
+            <h3>Old Flame 🔥❤️‍🔥</h3>
+            <p>An ex that still lingers in your mind.</p>
 
-<p>
 
-Continue writing...
+            <h2>P - S</h2>
 
-</p>
+            <h3>Player 🎲😏</h3>
+            <p>Someone who dates multiple people while keeping their true intentions hidden.</p>
 
-<div class="tags">
+            <h3>Promise of Devotion 💍💕</h3>
+            <p>A vow to be loyal and dedicated in a relationship.</p>
 
-<h2>Tags</h2>
+            <h3>Red Flag 🚩⚠️</h3>
+            <p>A warning sign that a person or relationship is toxic.</p>
 
-<a class="tag" href="#">Psychology</a>
+            <blockquote>
+                <strong>💬 Dating Wisdom:</strong><br>
+                "Red flags don’t turn green just because you ignore them."
+            </blockquote>
 
-<a class="tag" href="#">Relationships</a>
+            <h3>Relationship Goals 🏆💑</h3>
+            <p>A couple that others admire for their love and commitment.</p>
 
-<a class="tag" href="#">Communication</a>
+            <h3>Running Game 🎮🃏</h3>
+            <p>Using smooth talk and tricks to manipulate someone romantically.</p>
 
-<a class="tag" href="#">Manipulation</a>
+            <h3>Simp 🤦‍♂️💸</h3>
+            <p>A person who over-gives and over-invests (emotionally or financially) in someone who doesn’t reciprocate the effort.</p>
 
-</div>
+            <h3>Slow Fade 🌫️🚶‍♂️</h3>
+            <p>When a partner slowly stops texting, calling, or making plans over the course of weeks, avoiding a direct breakup conversation entirely.</p>
 
-<div class="related">
+            <h3>Slow Jam 🎶❤️</h3>
+            <p>A romantic R&B song perfect for setting the mood.</p>
 
-<h2>Related Articles</h2>
+            <h3>Sneaky Link 🕵️‍♀️🤫</h3>
+            <p>A secret, purely physical hookup that neither party acknowledges in public.</p>
 
-<ul>
 
-<li><a href="#">Healthy Boundaries</a></li>
+            <h2>T - Z</h2>
 
-<li><a href="#">Emotional Abuse</a></li>
+            <h3>Trauma Bond ⛓️🧠</h3>
+            <p>A biological addiction to a toxic relationship created by "Intermittent Reinforcement"—where an abusive partner alternates between extreme cruelty and extreme affection.</p>
 
-<li><a href="#">Love Bombing</a></li>
+            <h3>Triangulation 📐😈</h3>
+            <p>A manipulation tactic where a partner constantly brings a third person (an ex, a coworker, a friend) into the dynamic to make you feel jealous, insecure, and forced to compete for their attention.</p>
 
-<li><a href="#">Trust Building</a></li>
+            <h3>Weaponized Incompetence 🧽🤷‍♂️</h3>
+            <p>When a partner intentionally performs a task poorly (or pretends not to know how to do it) so that you will stop asking them to help and just do it yourself.</p>
 
-</ul>
+            <blockquote>
+                <strong>💬 Final Classic Wisdom:</strong><br>
+                "Love should be clear, not a guessing game."
+            </blockquote>
 
-</div>
 
-<div class="page-nav">
+            <div class="tags">
+                <h2>Tags</h2>
+                <a class="tag" href="#">Dictionary</a>
+                <a class="tag" href="#">Slang</a>
+                <a class="tag" href="#">Psychology</a>
+                <a class="tag" href="#">Red Flags</a>
+            </div>
 
-<a href="previous-article.html">
+            <div class="page-nav">
+                <a href="#">← Previous</a>
+                <a href="#top">↑ Back to Top</a>
+                <a href="#">Next →</a>
+            </div>
 
-← Previous
-
-</a>
-
-<a href="#top">
-
-↑ Back to Top
-
-</a>
-
-<a href="next-article.html">
-
-Next →
-
-</a>
-
-</div>
-
-</div>
-
-</main>
+        </div>
+    </main>
 
 </div>
 
 <footer>
-
-© 2026 LoveQnA
-
+    © 2026 LoveQnA | Built for the Future
 </footer>
 
 </body>
-
 </html>
