@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Incompatibility Awareness | LoveQnA</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+html{
+    scroll-behavior:smooth;
+}
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#FFF8E7;
+    color:#1A1A1A;
+    line-height:1.8;
+}
+
+/* ---------------- HEADER ---------------- */
+header{
+    background:white;
+    border-bottom:1px solid #ddd;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 40px;
+    position:sticky;
+    top:0;
+    z-index: 1000;
+}
+.logo{
+    font-size:28px;
+    font-weight:bold;
+    color:#501A1A;
+}
+nav{
+    display:flex;
+    gap:25px;
+}
+nav a{
+    color:#1A1A1A;
+    text-decoration:none;
+    font-weight:bold;
+}
+nav a:hover{
+    color:#501A1A;
+}
+
+/* ---------------- LAYOUT ---------------- */
+.container{
+    display:flex;
+    min-height:100vh;
+}
+
+/* ---------------- SIDEBAR ---------------- */
+.sidebar{
+    width:240px;
+    background:white;
+    border-right:1px solid #ddd;
+    padding:25px;
+}
+.sidebar h3{
+    color:#501A1A;
+    margin-bottom:20px;
+}
+.sidebar a{
+    display:block;
+    color:#1A1A1A;
+    text-decoration:none;
+    margin-bottom:14px;
+}
+.sidebar a:hover{
+    color:#501A1A;
+}
+
+/* ---------------- ARTICLE ---------------- */
+main{
+    flex:1;
+    padding:45px;
+}
+.breadcrumb{
+    font-size:14px;
+    margin-bottom:20px;
+    color:#666;
+}
+.article{
+    background:white;
+    border-radius:12px;
+    padding:40px;
+    box-shadow:0 2px 8px rgba(0,0,0,.08);
+}
+.article h1{
+    color:#501A1A;
+    margin-bottom:10px;
+}
+.meta{
+    color:#777;
+    font-size:14px;
+    margin-bottom:35px;
+}
+.article h2{
+    margin-top:40px;
+    color:#501A1A;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 5px;
+}
+.article h3 {
+    margin-top: 25px;
+    color: #333;
+}
+.article p{
+    margin-top:10px;
+}
+.article ul {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    padding-left: 40px;
+}
+.article li {
+    margin-bottom: 8px;
+}
+blockquote{
+    background-color: #f9f9f9;
+    border-left:5px solid #501A1A;
+    padding: 15px 20px;
+    margin:30px 0;
+    font-style:italic;
+    font-size: 1.1em;
+    color: #333;
+}
+
+/* ---------------- TAGS ---------------- */
+.tags{
+    margin-top:50px;
+}
+.tag{
+    display:inline-block;
+    background:#501A1A;
+    color:white;
+    padding:8px 14px;
+    border-radius:20px;
+    margin:5px;
+    text-decoration:none;
+}
+
+/* ---------------- RELATED ---------------- */
+.related{
+    margin-top:50px;
+}
+.related ul{
+    margin-top:15px;
+    padding-left:20px;
+}
+
+/* ---------------- NAVIGATION ---------------- */
+.page-nav{
+    margin-top:60px;
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+}
+.page-nav a{
+    text-decoration:none;
+    background:#501A1A;
+    color:white;
+    padding:12px 20px;
+    border-radius:8px;
+    margin-top:10px;
+}
+
+/* ---------------- FOOTER ---------------- */
+footer{
+    text-align:center;
+    padding:40px;
+    color:#777;
+}
+
+/* ---------------- MOBILE ---------------- */
+@media(max-width:900px){
+    .container{
+        flex-direction:column;
+    }
+    .sidebar{
+        width:100%;
+        border-right:none;
+        border-bottom:1px solid #ddd;
+    }
+    main{
+        padding:20px;
+    }
+    header{
+        flex-direction:column;
+        gap:15px;
+    }
+    nav{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+}
+</style>
+</head>
+
+<body id="top">
+
+<header>
+    <div class="logo">LoveQnA</div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="https://poe.com/NOLA-LoveQnA" target="_blank">BOT</a>
+        <a href="https://github.com/luckypikas/loveqna/wiki">Wiki</a>
+        <a href="https://luckypikas.github.io/loveqna/dictionary.html">Dictionary</a>  
+        <a href="https://luckypikas.github.io/loveqna/archives.html">Archives</a>  
+        <a href="https://luckypikas.github.io/loveqna/about.html">About</a>  
+    </nav>
+</header>
+
+<div class="container">
+
+    <aside class="sidebar">
+        <h3>CONTENTS</h3>
+        <a href="https://luckypikas.github.io/loveqna/">LoveQnA</a> 
+        <a href="https://luckypikas.github.io/loveqna/contents.html">Contents Page</a> 
+        <a href="https://luckypikas.github.io/loveqna/dictionary.html">Dictionary</a>  
+        <a href="https://luckypikas.github.io/loveqna/relationship-health.html">Relationship Stress</a>  
+        <a href="https://loveqna.substack.com/">LoveQnA Articles</a>  
+        <a href="https://www.youtube.com/@loveqnablog">LoveQnA Videos</a> 
+        <a href="https://github.com/luckypikas/loveqna/wiki">Wiki</a> 
+        <a href="https://poe.com/NOLA-LoveQnA">NOLA</a> 
+        <a href="https://luckypikas.github.io/loveqna/vibe-control.html">Vibe Control Links</a> 
+        <a href="https://luckypikas.github.io/loveqna/legacy-dynasty.html">Legacy/Dynasty Links</a> 
+        <a href="https://luckypikas.github.io/loveqna/ebooks.html">Ebooks</a> 
+        <a href="https://luckypikas.github.io/loveqna/ai-personas.html">A.I. Personas</a> 
+        <a href="https://luckypikas.github.io/loveqna/luckypika-studios.html">LoveQnA Documentaries</a>
+        <a href="https://luckypikas.github.io/loveqna/resources.html">Resources</a>
+    </aside>
+
+    <main>
+        <div class="breadcrumb">Home > Psychology > Behavioral Analysis > Incompatibility Awareness</div>
+
+        <div class="article">
+            <h1>Incompatibility Awareness: The Corporate Guide to Avoiding Bad Relationships</h1>
+            <div class="meta">• Behavioral Forensics | Lucky Pikas Studios</div>
+
+            <p>There is a famous saying: <em>"You can't help who you fall in love with."</em></p>
+
+            <p>That is a half-truth. You cannot control your initial physical attraction, but you have absolute, total control over who you commit to. Every day, highly intelligent people become willing victims, stalkers, or trapped spouses because they allow themselves to be mesmerized by beauty, "thrills," or a charming personality. They lose their self-control and walk blindly into a dead-end, drama-filled disaster.</p>
+
+            <p>But then, there are the "Early Walkers."</p>
+
+            <p>These are the people smart enough to see the drama ahead and walk away before it's too late. How do they do it? Do they possess some magical intuition? No. They treat dating the exact same way a Fortune 500 company treats the hiring process.</p>
+
+            <h2>The HR Strategy: Vetting for the Role of "Co-CEO"</h2>
+            <p>If you are building a life with someone, you are essentially interviewing them to be the Co-CEO of your future. Corporations do not hire executives based on "good vibes" or a pretty face. They run tests. They look for behavioral patterns. They eliminate the undesirables before the contract is ever signed.</p>
+            
+            <h3>1. Behavioral Interviewing (The "Crazy Ex" Test)</h3>
+            <p>When an HR recruiter interviews a candidate, they always ask: <em>"Tell me about a time you had a conflict with a manager."</em> If the candidate says, "My boss was crazy, my coworkers were out to get me, and I did nothing wrong," HR immediately knows this person lacks accountability.</p>
+            <p>Smart daters use this same tactic. When they ask about past relationships, they listen closely. If <em>all</em> of the prospect's exes are "crazy," the smart dater recognizes the common denominator and quietly ends the interview.</p>
+
+            <h3>2. The "Culture Fit" Matrix</h3>
+            <p>A candidate might look perfect on paper, but do they fit the company culture? In romance, this is compatibility. If you are a frugal saver who values peace and household management, and they are a wasteful spender who prioritizes clubs and outside hobbies, they fail the culture fit. You cannot build wealth with a partner who operates like a financial liability.</p>
+
+            <h3>3. The 90-Day Probationary Period</h3>
+            <p>Corporations give new hires 90 days. If they show up late or exhibit negative behavior, they are terminated immediately. In dating, the first 90 days is just an illusion. You are not dating the person; you are dating their "Representative." Early Walkers treat the first three months strictly as a probationary period, remaining emotionally detached until the mask falls off.</p>
+
+            <h2>Why Do Companies Use Personality Tests?</h2>
+            <p>Big businesses spend millions on personality tests like the "Big Five" (OCEAN model) to eliminate bad candidates from the pool. They aren't testing for intelligence; they are testing for <strong>stress response</strong>.</p>
+            <ul>
+                <li><strong>Neuroticism:</strong> Does this person easily give in to anxiety and anger? In a relationship, this is the partner who exhibits irrational, confrontational behavior just to keep you on edge.</li>
+                <li><strong>Conscientiousness:</strong> Is this person disciplined? In a relationship, this is the partner who pays bills on time, performs routine maintenance on the home, and honors their obligations.</li>
+                <li><strong>Agreeableness:</strong> Can this person compromise? In a relationship, this weeds out the dictators and tyrants who hate being challenged and talk down to their partners like children.</li>
+            </ul>
+
+            <h2>The Psychology of the "Early Walkers"</h2>
+            <p>So, what makes a person decide to walk away before they get deeply involved? They stick to their priorities and actively look for the traits of incompatibility.</p>
+
+            <p><strong>They Audit the Environment:</strong> They don't just look at the person; they look at their living situation. Does their car look like a trash can? Is their apartment a disaster zone? Are their friends negative, stagnant people? They know that a person's environment is the physical manifestation of their mind.</p>
+
+            <p><strong>They Test Emotional Regulation:</strong> Early Walkers test the word "No." If you politely decline a date or set a basic boundary, and the prospect responds with a tantrum, passive-aggression, or guilt-tripping, the Early Walker recognizes the emotional immaturity and severs ties immediately.</p>
+
+            <p><strong>They Refuse to Date "Projects":</strong> They recognize when someone is incapable of honesty, teamwork, saving money, or making decisions. They understand that you cannot love the potential out of a person; you can only date the reality of who they are today.</p>
+
+            <blockquote>
+                "Attraction will get you in the door, but a lack of compatibility will get you fired. Never negotiate your long-term goals for temporary chemistry."
+            </blockquote>
+
+            <h2>The 7 "Pre-Interview" Questions to Ask Yourself</h2>
+            <p>Before you enter the dating pool, you must act as the hiring manager of your own life. Ask yourself these 7 essential questions to ensure you never hire a liability:</p>
+            <ul>
+                <li><strong>1.</strong> Am I looking for a partner to build an empire with, or am I just looking for a distraction from my own loneliness?</li>
+                <li><strong>2.</strong> What are my absolute, non-negotiable dealbreakers, and am I prepared to walk away the exact second one is crossed?</li>
+                <li><strong>3.</strong> Do I have the emotional discipline to reject someone who is incredibly physically attractive, but fundamentally toxic?</li>
+                <li><strong>4.</strong> Am I financially and emotionally stable enough right now that I won't ignore red flags just to split the rent?</li>
+                <li><strong>5.</strong> What is my "Company Culture"? (Am I a homebody, an adventurer, a saver, or a spender, and what type of person actually fits that lifestyle?)</li>
+                <li><strong>6.</strong> Am I prone to the "Savior Complex," and do I need to stop treating dates like rehabilitation projects?</li>
+                <li><strong>7.</strong> If the exact person I am today walked into the room, would I want to date me?</li>
+            </ul>
+
+            <div class="tags">
+                <h2>Tags</h2>
+                <a class="tag" href="#">Psychology</a>
+                <a class="tag" href="#">Boundaries</a>
+                <a class="tag" href="#">Compatibility</a>
+                <a class="tag" href="#">Red Flags</a>
+            </div>
+
+            <div class="related">
+                <h2>Related Investigations</h2>
+                <ul>
+                    <li><a href="#">The Dictionary of Deception</a></li>
+                    <li><a href="#">Financial Hostages: When You Can't Afford to Leave</a></li>
+                    <li><a href="#">The Anatomy of the "Slow Fade"</a></li>
+                </ul>
+            </div>
+
+            <div class="page-nav">
+                <a href="#">← Previous</a>
+                <a href="#top">↑ Back to Top</a>
+                <a href="#">Next →</a>
+            </div>
+
+        </div>
+    </main>
+
+</div>
+
+<footer>
+    © 2026 LoveQnA Library | Lucky Pikas Studios
+</footer>
+
+</body>
+</html>
