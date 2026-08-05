@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Better First Date Questions | LoveQnA</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+html{
+    scroll-behavior:smooth;
+}
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#FFF8E7;
+    color:#1A1A1A;
+    line-height:1.8;
+}
+
+/* ---------------- HEADER ---------------- */
+header{
+    background:white;
+    border-bottom:1px solid #ddd;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 40px;
+    position:sticky;
+    top:0;
+    z-index: 1000;
+}
+.logo{
+    font-size:28px;
+    font-weight:bold;
+    color:#501A1A;
+}
+nav{
+    display:flex;
+    gap:25px;
+}
+nav a{
+    color:#1A1A1A;
+    text-decoration:none;
+    font-weight:bold;
+}
+nav a:hover{
+    color:#501A1A;
+}
+
+/* ---------------- LAYOUT ---------------- */
+.container{
+    display:flex;
+    min-height:100vh;
+}
+
+/* ---------------- SIDEBAR ---------------- */
+.sidebar{
+    width:240px;
+    background:white;
+    border-right:1px solid #ddd;
+    padding:25px;
+}
+.sidebar h3{
+    color:#501A1A;
+    margin-bottom:20px;
+}
+.sidebar a{
+    display:block;
+    color:#1A1A1A;
+    text-decoration:none;
+    margin-bottom:14px;
+}
+.sidebar a:hover{
+    color:#501A1A;
+}
+
+/* ---------------- ARTICLE ---------------- */
+main{
+    flex:1;
+    padding:45px;
+}
+.breadcrumb{
+    font-size:14px;
+    margin-bottom:20px;
+    color:#666;
+}
+.article{
+    background:white;
+    border-radius:12px;
+    padding:40px;
+    box-shadow:0 2px 8px rgba(0,0,0,.08);
+}
+.article h1{
+    color:#501A1A;
+    margin-bottom:10px;
+}
+.meta{
+    color:#777;
+    font-size:14px;
+    margin-bottom:35px;
+}
+.article h2{
+    margin-top:40px;
+    color:#501A1A;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 5px;
+}
+.article h3 {
+    margin-top: 25px;
+    color: #333;
+}
+.article p{
+    margin-top:10px;
+}
+.article ul {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    padding-left: 40px;
+}
+.article li {
+    margin-bottom: 8px;
+}
+.article li a {
+    color: #1e90ff;
+    text-decoration: none;
+    font-weight: bold;
+}
+.article li a:hover {
+    color: #ff4757;
+    text-decoration: underline;
+}
+blockquote{
+    background-color: #f9f9f9;
+    border-left:5px solid #501A1A;
+    padding: 15px 20px;
+    margin:30px 0;
+    font-style:italic;
+    font-size: 1.1em;
+    color: #333;
+}
+
+/* ---------------- TAGS ---------------- */
+.tags{
+    margin-top:50px;
+}
+.tag{
+    display:inline-block;
+    background:#501A1A;
+    color:white;
+    padding:8px 14px;
+    border-radius:20px;
+    margin:5px;
+    text-decoration:none;
+}
+
+/* ---------------- RELATED ---------------- */
+.related{
+    margin-top:50px;
+}
+.related ul{
+    margin-top:15px;
+    padding-left:20px;
+}
+
+/* ---------------- NAVIGATION ---------------- */
+.page-nav{
+    margin-top:60px;
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+}
+.page-nav a{
+    text-decoration:none;
+    background:#501A1A;
+    color:white;
+    padding:12px 20px;
+    border-radius:8px;
+    margin-top:10px;
+}
+
+/* ---------------- FOOTER ---------------- */
+footer{
+    text-align:center;
+    padding:40px;
+    color:#777;
+}
+
+/* ---------------- MOBILE ---------------- */
+@media(max-width:900px){
+    .container{
+        flex-direction:column;
+    }
+    .sidebar{
+        width:100%;
+        border-right:none;
+        border-bottom:1px solid #ddd;
+    }
+    main{
+        padding:20px;
+    }
+    header{
+        flex-direction:column;
+        gap:15px;
+    }
+    nav{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+}
+</style>
+</head>
+
+<body id="top">
+
+<header>
+    <div class="logo">LoveQnA</div>
+    <nav>
+        <a href="https://luckypikas.github.io/loveqna/index.html">Home</a>
+        <a href="https://poe.com/NOLA-LoveQnA" target="_blank">BOT</a>
+        <a href="https://github.com/luckypikas/loveqna/wiki">Wiki</a>
+        <a href="https://luckypikas.github.io/loveqna/dictionary.html">Dictionary</a>  
+        <a href="https://luckypikas.github.io/loveqna/archives.html">Archives</a>  
+        <a href="https://luckypikas.github.io/loveqna/about.html">About</a>  
+    </nav>
+</header>
+
+<div class="container">
+
+    <aside class="sidebar">
+        <h3>CONTENTS</h3>
+        <a href="https://luckypikas.github.io/loveqna/">LoveQnA</a> 
+        <a href="https://luckypikas.github.io/loveqna/contents.html">Contents Page</a> 
+        <a href="https://luckypikas.github.io/loveqna/dictionary.html">Dictionary</a>  
+        <a href="https://luckypikas.github.io/loveqna/relationship-health.html">Relationship Stress</a>  
+        <a href="https://loveqna.substack.com/">LoveQnA Articles</a>  
+        <a href="https://www.youtube.com/@loveqnablog">LoveQnA Videos</a> 
+        <a href="https://github.com/luckypikas/loveqna/wiki">Wiki</a> 
+        <a href="https://poe.com/NOLA-LoveQnA">NOLA</a> 
+        <a href="https://luckypikas.github.io/loveqna/vibe-control.html">Vibe Control Links</a> 
+        <a href="https://luckypikas.github.io/loveqna/legacy-dynasty.html">Legacy/Dynasty Links</a> 
+        <a href="https://luckypikas.github.io/loveqna/ebooks.html">Ebooks</a> 
+        <a href="https://luckypikas.github.io/loveqna/ai-personas.html">A.I. Personas</a> 
+        <a href="https://luckypikas.github.io/loveqna/luckypika-studios.html">LoveQnA Documentaries</a>
+        <a href="https://luckypikas.github.io/loveqna/resources.html">Resources</a>
+    </aside>
+
+    <main>
+        <div class="breadcrumb">Home > Psychology > Dating > First Date Scripts</div>
+
+        <div class="article">
+            <h1>Free Scripts You Can Use to Ask Better Questions on a First Date</h1>
+            <div class="meta">• Behavioral Vetting | Lucky Pikas Studios</div>
+
+            <p>Most first dates fail because they feel like boring job interviews. "Where did you grow up?" "What do you do for work?" These surface-level questions yield surface-level answers, completely failing to expose the hidden behaviors and core values of the person sitting across the table.</p>
+
+            <p>If you want to protect your peace of mind and avoid falling into a trap with a manipulator, a financial drainer, or a "Stroller" (an unambitious person), you have to learn how to ask investigative questions <em>tactfully</em>. You must gather data without sounding like a detective.</p>
+
+            <p>Here are tested conversational scripts you can use to seamlessly extract vital information while keeping the vibe light and engaging.</p>
+
+            <h2>Script 1: Testing Emotional Regulation & Drama</h2>
+            <p>You need to know how this person handles stress. Do they take accountability, or is everyone else a villain?</p>
+            <ul>
+                <li><strong>The Setup:</strong> "I had the craziest thing happen at work today..." <em>(Share a brief story about a minor conflict).</em></li>
+                <li><strong>The Script:</strong> "Have you ever had a situation where you completely bumped heads with a boss or a coworker? How did you end up handling it?"</li>
+                <li><strong>What You're Looking For:</strong> Listen to their framing. If they say, "Everyone at my old job was toxic and out to get me," you have identified a chronic victim. If they say, "We disagreed, but I pulled them aside and we figured it out," you have identified emotional maturity.</li>
+            </ul>
+
+            <h2>Script 2: Uncovering Lifestyle & Financial Habits</h2>
+            <p>You cannot build a future with someone who treats money like a game. This script helps you spot the "Chiselers" and "Hucksters."</p>
+            <ul>
+                <li><strong>The Setup:</strong> "I've been trying to budget better lately so I can finally take a trip next year."</li>
+                <li><strong>The Script:</strong> "What’s your philosophy on saving versus enjoying the moment? Are you more of a planner, or do you prefer to just live spontaneously?"</li>
+                <li><strong>What You're Looking For:</strong> Spontaneity is great, but if they openly admit they live paycheck to paycheck and mock the idea of saving, you are sitting across from a future financial liability.</li>
+            </ul>
+
+            <h2>Script 3: Exposing the "Peter Pan" (Ambition Test)</h2>
+            <p>How do you spot someone who lacks drive without directly asking for their resume?</p>
+            <ul>
+                <li><strong>The Setup:</strong> "It feels like everyone is transitioning or trying to start a side-hustle right now."</li>
+                <li><strong>The Script:</strong> "If time and money weren't an issue, what is the one project or passion you'd dedicate your life to building?"</li>
+                <li><strong>What You're Looking For:</strong> You want to see their eyes light up. Even if they haven't achieved it yet, a healthy person has goals. If they give a blank stare or say they'd just "chill and play video games," you have identified an unambitious "Stroller."</li>
+            </ul>
+
+            <h2>Script 4: The "Relationship Autopsy"</h2>
+            <p>Finding out why their last relationship ended is crucial, but asking directly can be jarring.</p>
+            <ul>
+                <li><strong>The Setup:</strong> "Dating nowadays is wild. I’ve learned so much about what I actually need in a partner over the last few years."</li>
+                <li><strong>The Script:</strong> "What would you say is the biggest lesson you took away from your last serious relationship?"</li>
+                <li><strong>What You're Looking For:</strong> Again, watch for accountability. Do they acknowledge their own flaws? Do they talk respectfully about their ex? If they immediately launch into a hateful rant calling their ex "crazy," tread very carefully.</li>
+            </ul>
+
+            <blockquote>
+                "A good question will never scare away the right partner. It will only expose the wrong one. Vetting early prevents agonizing heartbreak later."
+            </blockquote>
+
+            <div class="tags">
+                <h2>Tags</h2>
+                <a class="tag" href="#">First Dates</a>
+                <a class="tag" href="#">Vetting</a>
+                <a class="tag" href="#">Communication</a>
+                <a class="tag" href="#">Scripts</a>
+            </div>
+
+            <div class="related">
+                <h2>Related Guides</h2>
+                <ul>
+                    <li><a href="https://luckypikas.github.io/loveqna/DATING/partner-open-up.html">Free Scripts to Help Your Partner Open-Up</a></li>
+                    <li><a href="https://luckypikas.github.io/loveqna/DATING/100-questions-marriage.html">100 Questions You Should Always Ask Before Marriage</a></li>
+                    <li><a href="https://luckypikas.github.io/loveqna/CONTENTS/incompatibility-awareness.html">Incompatibility Awareness</a></li>
+                </ul>
+            </div>
+
+            <div class="page-nav">
+                <a href="https://luckypikas.github.io/loveqna/contents.html">← Contents</a>
+                <a href="#top">↑ Back to Top</a>
+                <a href="https://luckypikas.github.io/loveqna/DATING/partner-open-up.html">Next Article →</a>
+            </div>
+
+        </div>
+    </main>
+
+</div>
+
+<footer>
+    © 2026 LoveQnA Library | Lucky Pikas Studios
+</footer>
+
+</body>
+</html>
