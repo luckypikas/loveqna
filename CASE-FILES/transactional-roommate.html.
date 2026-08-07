@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Case File 002: The Transactional Roommate | LoveQnA</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+html{
+    scroll-behavior:smooth;
+}
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#FFF8E7;
+    color:#1A1A1A;
+    line-height:1.8;
+}
+
+/* ---------------- HEADER ---------------- */
+header{
+    background:white;
+    border-bottom:1px solid #ddd;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 40px;
+    position:sticky;
+    top:0;
+    z-index: 1000;
+}
+.logo{
+    font-size:28px;
+    font-weight:bold;
+    color:#501A1A;
+}
+nav{
+    display:flex;
+    gap:25px;
+}
+nav a{
+    color:#1A1A1A;
+    text-decoration:none;
+    font-weight:bold;
+}
+nav a:hover{
+    color:#501A1A;
+}
+
+/* ---------------- LAYOUT ---------------- */
+.container{
+    display:flex;
+    min-height:100vh;
+}
+
+/* ---------------- SIDEBAR ---------------- */
+.sidebar{
+    width:240px;
+    background:white;
+    border-right:1px solid #ddd;
+    padding:25px;
+}
+.sidebar h3{
+    color:#501A1A;
+    margin-bottom:20px;
+}
+.sidebar a{
+    display:block;
+    color:#1A1A1A;
+    text-decoration:none;
+    margin-bottom:14px;
+}
+.sidebar a:hover{
+    color:#501A1A;
+}
+
+/* ---------------- ARTICLE ---------------- */
+main{
+    flex:1;
+    padding:45px;
+}
+.breadcrumb{
+    font-size:14px;
+    margin-bottom:20px;
+    color:#666;
+}
+.article{
+    background:white;
+    border-radius:12px;
+    padding:40px;
+    box-shadow:0 2px 8px rgba(0,0,0,.08);
+}
+.article h1{
+    color:#501A1A;
+    margin-bottom:10px;
+}
+.meta{
+    color:#777;
+    font-size:14px;
+    margin-bottom:35px;
+}
+.article h2{
+    margin-top:40px;
+    color:#501A1A;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 5px;
+}
+.article h3 {
+    margin-top: 25px;
+    color: #333;
+}
+.article p{
+    margin-top:15px;
+}
+.article ul {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    padding-left: 40px;
+}
+.article li {
+    margin-bottom: 8px;
+}
+.article li a {
+    color: #1e90ff;
+    text-decoration: none;
+    font-weight: bold;
+}
+.article li a:hover {
+    color: #ff4757;
+    text-decoration: underline;
+}
+blockquote{
+    background-color: #f9f9f9;
+    border-left:5px solid #501A1A;
+    padding: 15px 20px;
+    margin:30px 0;
+    font-style:italic;
+    font-size: 1.1em;
+    color: #333;
+}
+
+/* ---------------- TAGS ---------------- */
+.tags{
+    margin-top:50px;
+}
+.tag{
+    display:inline-block;
+    background:#501A1A;
+    color:white;
+    padding:8px 14px;
+    border-radius:20px;
+    margin:5px;
+    text-decoration:none;
+}
+
+/* ---------------- RELATED ---------------- */
+.related{
+    margin-top:50px;
+}
+.related ul{
+    margin-top:15px;
+    padding-left:20px;
+}
+
+/* ---------------- NAVIGATION ---------------- */
+.page-nav{
+    margin-top:60px;
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+}
+.page-nav a{
+    text-decoration:none;
+    background:#501A1A;
+    color:white;
+    padding:12px 20px;
+    border-radius:8px;
+    margin-top:10px;
+}
+
+/* ---------------- FOOTER ---------------- */
+footer{
+    text-align:center;
+    padding:40px;
+    color:#777;
+}
+
+/* ---------------- MOBILE ---------------- */
+@media(max-width:900px){
+    .container{
+        flex-direction:column;
+    }
+    .sidebar{
+        width:100%;
+        border-right:none;
+        border-bottom:1px solid #ddd;
+    }
+    main{
+        padding:20px;
+    }
+    header{
+        flex-direction:column;
+        gap:15px;
+    }
+    nav{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+}
+</style>
+</head>
+
+<body id="top">
+
+<header>
+    <div class="logo">LoveQnA</div>
+    <nav>
+        <a href="https://luckypikas.github.io/loveqna/index.html">Home</a>
+        <a href="https://poe.com/NOLA-LoveQnA" target="_blank">BOT</a>
+        <a href="https://github.com/luckypikas/loveqna/wiki">Wiki</a>
+        <a href="https://luckypikas.github.io/loveqna/dictionary.html">Dictionary</a>  
+        <a href="https://luckypikas.github.io/loveqna/archives.html">Archives</a>  
+        <a href="https://luckypikas.github.io/loveqna/about.html">About</a>  
+    </nav>
+</header>
+
+<div class="container">
+
+    <aside class="sidebar">
+        <h3>CONTENTS</h3>
+        <a href="https://luckypikas.github.io/loveqna/">LoveQnA</a> 
+        <a href="https://luckypikas.github.io/loveqna/contents.html">Contents Page</a> 
+        <a href="https://luckypikas.github.io/loveqna/dictionary.html">Dictionary</a>  
+        <a href="https://luckypikas.github.io/loveqna/relationship-health.html">Relationship Stress</a>  
+        <a href="https://loveqna.substack.com/" target="_blank">LoveQnA Articles</a>  
+        <a href="https://www.youtube.com/@loveqnablog" target="_blank">LoveQnA Videos</a> 
+        <a href="https://github.com/luckypikas/loveqna/wiki">Wiki</a> 
+        <a href="https://poe.com/NOLA-LoveQnA" target="_blank">NOLA</a> 
+        <a href="https://luckypikas.github.io/loveqna/vibe-control.html">Vibe Control Links</a> 
+        <a href="https://luckypikas.github.io/loveqna/legacy-dynasty.html">Legacy/Dynasty Links</a> 
+        <a href="https://luckypikas.github.io/loveqna/ebooks.html">Ebooks</a> 
+        <a href="https://luckypikas.github.io/loveqna/ai-personas.html">A.I. Personas</a> 
+        <a href="https://luckypikas.github.io/loveqna/luckypika-studios.html">LoveQnA Documentaries</a>
+        <a href="https://luckypikas.github.io/loveqna/resources.html">Resources</a>
+    </aside>
+
+    <main>
+        <div class="breadcrumb">Home > Library > Case Files > Case File 002</div>
+
+        <div class="article">
+            <h1>Case File 002: The Transactional Roommate (The 20-Year Age Gap)</h1>
+            <div class="meta">• Behavioral Forensics & Case Studies | Lucky Pikas Studios</div>
+
+            <p>If you walked through this neighborhood, you would think he was the ultimate catch. He’s in his mid-fifties, highly charismatic, and always ready to fire up the grill. He’s the local handyman. He talks to everyone, plays music, and knows how to command a room with excellent conversation skills. To the outside world, he is the life of the party.</p>
+
+            <p>But behind closed doors, he is running a masterclass in parasitic survival. </p>
+
+            <p>His girlfriend is 74 years old. There is a 20-year age gap. They have been together for over a decade. And today, we are opening the case file to investigate the quiet tragedy of the <strong>Economics of Loneliness</strong> and the <strong>Charisma Camouflage.</strong></p>
+
+            <blockquote>
+                "Paying a toll for bad company is a tragic way to avoid the quiet peace of being alone. A good reputation in the streets does not excuse predatory behavior in the house."
+            </blockquote>
+
+            <h2>The Charisma Camouflage</h2>
+            <p>In behavioral profiling, we call his behavior the "Charisma Camouflage." Manipulators use a stellar public reputation to get away with horrific private behavior. Because the neighbors like him, and because he is always willing to help out with a wrench or a cookout, the girlfriend feels a subconscious pressure to believe <em>she</em> is the lucky one.</p>
+            <p>But the reality is entirely one-sided. He isn't physically attracted to her anymore. He avoids spending alone time with her in the house, preferring to isolate himself with video games and music. He ogles women in public, cat-calls strangers, and aggressively seeks out neighbors, sex workers, and even feminine men behind her back.</p>
+
+            <h2>The "Oops" Tactic: Plausible Deniability</h2>
+            <p>The deepest red flag in this relationship isn't the cheating—it is the sheer proximity of the betrayal. He doesn't just cheat with strangers; he hunts within her own inner circle.</p>
+            <p>He actively hit on her daughter. He propositioned her family members. And in a terrifying display of manipulation, he sent a highly explicit, inappropriate picture directly to his girlfriend's best friend. When confronted, he used the oldest trick in the scammer's playbook: <strong>The Plausible Deniability Defense.</strong></p>
+            <p>He claimed he sent it "by accident."</p>
+            <p>In the LoveQnA dictionary, we know there are no "accidents" when it comes to crossing boundaries with a partner's family. He sent it to test the waters. If the friend liked it, he won. When the friend got angry, he deployed the "Oops" excuse to avoid accountability. It is a zero-risk manipulation tactic designed to test fences.</p>
+
+            <h2>Weaponizing Insecurities</h2>
+            <p>To justify his lack of intimacy and his blatant cheating, he weaponizes her age. She is an active 74-year-old. She walks every day, cooks, cleans, navigates TikTok and Facebook, has beautiful long hair, and keeps herself looking good. She isn't a prude, and she is open about intimacy.</p>
+            <p>Yet, he tells her that she "moves like her age in bed." He uses her lack of acrobatic agility as the ultimate excuse for his emotional and physical abandonment. He breaks down her self-esteem so she doesn't feel confident enough to leave him.</p>
+
+            <h2>The Financial Hostage & The Chump-Change Trap</h2>
+            <p>So, why does he stay? He stays because his own family will not help him. When he needs money, she is the very first person he calls. He uses her for "chump-change"—$3 here, $100 there. He repays his debts just enough to keep the ledger looking functional, but he uses her home as a free safety net.</p>
+
+            <p>The more profound question is: <strong>Why does SHE stay?</strong></p>
+
+            <h2>The Verdict: The Economics of Loneliness</h2>
+            <p>She isn't trapped. She owns her home. Her kids are grown and moved out. She is financially secure and healthy.</p>
+            <p>She stays because of the terrifying societal fear of aging alone. This is the <strong>Transactional Roommate</strong> dynamic. He gets a free ATM, a comfortable house, and a safety net when he's broke. In exchange, she gets a live-in handyman, someone to eat dinner with, and the illusion of a partner so she doesn't have to face the deafening silence of an empty house in her seventies.</p>
+            
+            <p>She knows exactly who he is. She and her best friend fussed him out over the explicit picture, yet she allowed him to stay. She has her eyes wide open, but she has decided that the disrespect, the cheating, and the financial draining are simply the "rent" she has to pay to keep a warm body in the house.</p>
+
+            <p>It is a profound tragedy of the human condition. They are two people living under one roof, fundamentally alone, engaging in a daily business transaction disguised as a decade-long romance.</p>
+
+            <blockquote>
+                "You cannot buy genuine loyalty. If you have to finance a person's life just to secure a seat at their table, you aren't a partner. You are a mark."
+            </blockquote>
+
+            <div class="tags">
+                <h2>Tags</h2>
+                <a class="tag" href="#">Case Files</a>
+                <a class="tag" href="#">Financial Abuse</a>
+                <a class="tag" href="#">Age Gap</a>
+                <a class="tag" href="#">Manipulation</a>
+            </div>
+
+            <div class="related">
+                <h2>Related Investigations</h2>
+                <ul>
+                    <li><a href="https://luckypikas.github.io/loveqna/dictionary.html">The Dictionary of Deception</a></li>
+                    <li><a href="https://luckypikas.github.io/loveqna/CASE-FILES/white-knight-trap.html">Case File 001: The White Knight Trap</a></li>
+                    <li><a href="https://luckypikas.github.io/loveqna/CONTENTS/incompatibility-awareness.html">Incompatibility Awareness</a></li>
+                </ul>
+            </div>
+
+            <div class="page-nav">
+                <a href="https://luckypikas.github.io/loveqna/contents.html">← Contents Page</a>
+                <a href="#top">↑ Back to Top</a>
+                <a href="#">Next Case File →</a>
+            </div>
+
+        </div>
+    </main>
+
+</div>
+
+<footer>
+    © 2026 LoveQnA Library | Lucky Pikas Studios
+</footer>
+
+</body>
+</html>
