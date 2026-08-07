@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Storytime: The White Knight Trap | LoveQnA</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+html{
+    scroll-behavior:smooth;
+}
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#FFF8E7;
+    color:#1A1A1A;
+    line-height:1.8;
+}
+
+/* ---------------- HEADER ---------------- */
+header{
+    background:white;
+    border-bottom:1px solid #ddd;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 40px;
+    position:sticky;
+    top:0;
+    z-index: 1000;
+}
+.logo{
+    font-size:28px;
+    font-weight:bold;
+    color:#501A1A;
+}
+nav{
+    display:flex;
+    gap:25px;
+}
+nav a{
+    color:#1A1A1A;
+    text-decoration:none;
+    font-weight:bold;
+}
+nav a:hover{
+    color:#501A1A;
+}
+
+/* ---------------- LAYOUT ---------------- */
+.container{
+    display:flex;
+    min-height:100vh;
+}
+
+/* ---------------- SIDEBAR ---------------- */
+.sidebar{
+    width:240px;
+    background:white;
+    border-right:1px solid #ddd;
+    padding:25px;
+}
+.sidebar h3{
+    color:#501A1A;
+    margin-bottom:20px;
+}
+.sidebar a{
+    display:block;
+    color:#1A1A1A;
+    text-decoration:none;
+    margin-bottom:14px;
+}
+.sidebar a:hover{
+    color:#501A1A;
+}
+
+/* ---------------- ARTICLE ---------------- */
+main{
+    flex:1;
+    padding:45px;
+}
+.breadcrumb{
+    font-size:14px;
+    margin-bottom:20px;
+    color:#666;
+}
+.article{
+    background:white;
+    border-radius:12px;
+    padding:40px;
+    box-shadow:0 2px 8px rgba(0,0,0,.08);
+}
+.article h1{
+    color:#501A1A;
+    margin-bottom:10px;
+}
+.meta{
+    color:#777;
+    font-size:14px;
+    margin-bottom:35px;
+}
+.article h2{
+    margin-top:40px;
+    color:#501A1A;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 5px;
+}
+.article p{
+    margin-top:15px;
+}
+.article ul {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    padding-left: 40px;
+}
+.article li {
+    margin-bottom: 8px;
+}
+.article li a {
+    color: #1e90ff;
+    text-decoration: none;
+    font-weight: bold;
+}
+.article li a:hover {
+    color: #ff4757;
+    text-decoration: underline;
+}
+blockquote{
+    background-color: #f9f9f9;
+    border-left:5px solid #501A1A;
+    padding: 15px 20px;
+    margin:30px 0;
+    font-style:italic;
+    font-size: 1.1em;
+    color: #333;
+}
+
+/* ---------------- TAGS ---------------- */
+.tags{
+    margin-top:50px;
+}
+.tag{
+    display:inline-block;
+    background:#501A1A;
+    color:white;
+    padding:8px 14px;
+    border-radius:20px;
+    margin:5px;
+    text-decoration:none;
+}
+
+/* ---------------- RELATED ---------------- */
+.related{
+    margin-top:50px;
+}
+.related ul{
+    margin-top:15px;
+    padding-left:20px;
+}
+
+/* ---------------- NAVIGATION ---------------- */
+.page-nav{
+    margin-top:60px;
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+}
+.page-nav a{
+    text-decoration:none;
+    background:#501A1A;
+    color:white;
+    padding:12px 20px;
+    border-radius:8px;
+    margin-top:10px;
+}
+
+/* ---------------- FOOTER ---------------- */
+footer{
+    text-align:center;
+    padding:40px;
+    color:#777;
+}
+
+/* ---------------- MOBILE ---------------- */
+@media(max-width:900px){
+    .container{
+        flex-direction:column;
+    }
+    .sidebar{
+        width:100%;
+        border-right:none;
+        border-bottom:1px solid #ddd;
+    }
+    main{
+        padding:20px;
+    }
+    header{
+        flex-direction:column;
+        gap:15px;
+    }
+    nav{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+}
+</style>
+</head>
+
+<body id="top">
+
+<header>
+    <div class="logo">LoveQnA</div>
+    <nav>
+        <a href="https://luckypikas.github.io/loveqna/index.html">Home</a>
+        <a href="https://poe.com/NOLA-LoveQnA" target="_blank">BOT</a>
+        <a href="https://github.com/luckypikas/loveqna/wiki">Wiki</a>
+        <a href="https://luckypikas.github.io/loveqna/dictionary.html">Dictionary</a>  
+        <a href="https://luckypikas.github.io/loveqna/archives.html">Archives</a>  
+        <a href="https://luckypikas.github.io/loveqna/about.html">About</a>  
+    </nav>
+</header>
+
+<div class="container">
+
+    <aside class="sidebar">
+        <h3>CONTENTS</h3>
+        <a href="https://luckypikas.github.io/loveqna/">LoveQnA</a> 
+        <a href="https://luckypikas.github.io/loveqna/contents.html">Contents Page</a> 
+        <a href="https://luckypikas.github.io/loveqna/dictionary.html">Dictionary</a>  
+        <a href="https://luckypikas.github.io/loveqna/relationship-health.html">Relationship Stress</a>  
+        <a href="https://loveqna.substack.com/" target="_blank">LoveQnA Substack</a>  
+        <a href="https://www.youtube.com/@loveqnablog" target="_blank">LoveQnA Videos</a> 
+        <a href="https://github.com/luckypikas/loveqna/wiki">Wiki</a> 
+        <a href="https://poe.com/NOLA-LoveQnA" target="_blank">NOLA</a> 
+        <a href="https://luckypikas.github.io/loveqna/vibe-control.html">Vibe Control Links</a> 
+        <a href="https://luckypikas.github.io/loveqna/legacy-dynasty.html">Legacy/Dynasty Links</a> 
+        <a href="https://luckypikas.github.io/loveqna/ebooks.html">Ebooks</a> 
+        <a href="https://luckypikas.github.io/loveqna/ai-personas.html">A.I. Personas</a> 
+        <a href="https://luckypikas.github.io/loveqna/luckypika-studios.html">LoveQnA Documentaries</a>
+        <a href="https://luckypikas.github.io/loveqna/resources.html">Resources</a>
+    </aside>
+
+    <main>
+        <div class="breadcrumb">Home > Library > Storytime > The White Knight Trap</div>
+
+        <div class="article">
+            <h1>The White Knight Trap: How a Grown Man Financed His Own Heartbreak</h1>
+            <div class="meta">• Storytime Archive | LoveQnA Documentaries</div>
+
+            <p>Let me paint a picture of exactly how a grown man finances his own heartbreak.</p>
+
+            <p>Meet Dave. Dave is fifty years old, he works hard at a landscaping company, but his self-esteem is hanging on by a thread because he's missing a few front teeth. Instead of finding a woman who actually respects him, Dave has a terrible habit. He likes to play "Captain Save-a-Hoe" for women who use him for free meals. He goes after women who are loud, terrible with money, looking for a free ride, and perfectly willing to play games.</p>
+
+            <p>Case in point: Deborah.</p>
+
+            <p>For eight long years, Dave dated Deborah. She was 43, still living with her parents, and Dave was her personal sponsor. He paid her phone bill, gave her gas money, bought her wine, and even took her and her parents on a cruise. But what did Dave get in return? In eight years, they were intimate maybe twenty times. She rarely even kissed him.</p>
+
+            <p>But the absolute peak of the disrespect happened when Deborah had another man—a guy she was secretly seeing—drive her home. She actually called Dave while she was in this other man's car, lied and said the guy was just an "Uber driver," and put Dave on speakerphone just so Dave could confirm to the other man that he and Deborah weren't sleeping together!</p>
+
+            <p>Dave was furious. He knew the guy wasn't an Uber driver, and worse, Deborah had just shown this other man exactly where Dave lived. Dave finally drew a line. He told Deborah he loved her, but she was banned from his house. He was ready to move on.</p>
+
+            <h2>Enter Mya</h2>
+
+            <p>Mya ran in the same circles as Deborah. She had the exact same loud, manipulative, opportunistic energy that Dave was secretly addicted to. And Mya knew exactly how to play him.</p>
+
+            <p>One day, out of nowhere, Mya started flirting with Dave. Dave was shocked, but his ego was absolutely glowing. He didn't think he had a shot because of the age gap and his teeth, but he wanted to win her over.</p>
+
+            <p>Mya didn't even have to try hard to set the trap. One afternoon, while Dave was around, Mya casually asked her broke father for gas money to get to work. She knew her dad didn't have it. But she also knew Dave was listening. Right on cue, Dave swooped in like a White Knight and sent her $100 without her even asking.</p>
+
+            <p>Mya thanked him. Then, she immediately tested her luck again. She asked Dave if he could give her a ride to get some fast food. Dave rushed over to pick her up. But once she got in the car, she changed the destination to a much more expensive restaurant. Dave didn't mind; he was just happy to be there.</p>
+
+            <p>When it was time to order, Dave told her she should get her dad and his girlfriend some food too, and he'd grab a plate for himself. But when the cashier read out the massive total, Mya didn't reach for her purse. She looked at the cashier, pointed directly at Dave, and said, <em>"Yeah, you can just tap your card right there."</em></p>
+
+            <p>She expected Dave to pay for her, her dad, and her dad's girlfriend. Dave was stunned. He actually stood his ground and said, "Hell no," refusing to pay for her family. Mya’s father’s food was canceled.</p>
+
+            <p>Dave realized right then and there that she was a hustler. But he thought he was smart enough to handle it. He was determined to get what he wanted out of her, even if it cost him a few meals.</p>
+
+            <h2>The Beach Trip Scam</h2>
+
+            <p>Then, Dave got a massive bonus at work and a payout from a settlement. And like clockwork, he told Mya about the money.</p>
+
+            <p>Suddenly, Mya was talking about going on a cruise. She told him she would set it all up, and Dave actually gave this woman his credit card number and his ID over the phone. They eventually decided to do a romantic beach trip instead. Dave sent her over $300 just to book a nice, safe, premium hotel room. He bought new clothes, shoes, cologne, and rented a car. He was easily $900 deep into this weekend.</p>
+
+            <p>But when they got to the beach, Mya pulled the ultimate scam. When it was time to check into the hotel, she made Dave wait outside and get the bags. When he walked in, she accidentally gave herself away by asking the front desk clerk, "Are we on the top or bottom floor?"</p>
+
+            <p>She hadn't made a reservation at a nice hotel at all. She had booked them into a terrifying, $29-a-night trap motel in the hood, where people were dealing drugs in the parking lot. She had pocketed the rest of the $300 Dave gave her. To make matters worse, she showed up to the beach with a massive cold sore.</p>
+
+            <p>Dave was disgusted. He was angry. A trip that was supposed to last three days was cut short, and Dave demanded they pack up and leave after just a day and a half.</p>
+
+            <h2>The Hostage Drive</h2>
+
+            <p>But Mya wasn't going to let him take control. She was furious that her free vacation was ending early. When it was time to leave, she demanded to drive the rental car. Dave said no, and Mya completely lost her mind.</p>
+
+            <p>She threw a massive, violent tantrum in the parking lot. She started kicking the dashboard, slamming the car doors as hard as she could, and hitting the windows like she was trying to shatter the glass. Dave finally caved and gave her the keys just to calm her down.</p>
+
+            <p>But the second she got behind the wheel, she held him hostage. She refused to give the keys back. She drove like an absolute maniac all the way home—speeding, swerving onto off-ramps at the last second, running over grass and debris, and slamming on the brakes just to terrify him.</p>
+
+            <p>While she was terrorizing him on the highway, she started verbally attacking him. She talked trash about his life, insulted his mother, and told him that his own father didn't even want to be bothered with him. (The irony is, Dave's father actually showed up the exact same day they got back, after a year of no contact).</p>
+
+            <p>Dave swore he was done. He swore he would never speak to her again.</p>
+
+            <h2>The Delusion & The Aftermath</h2>
+
+            <p>...Except, he meant he wouldn't speak to her again <em>after</em> the cruise. Because despite being robbed, held hostage in a car, and verbally abused, Dave still fully intended to take this woman on a cruise!</p>
+
+            <p>A week later, Dave didn't cut her off. He went and bought her roses and a card.</p>
+
+            <p>Mya was shocked. And a few days later, her strategy paid off. They finally had completely naked, intimate sex. Dave felt like he had finally won the prize.</p>
+
+            <p>But a couple of days later, Dave noticed something terrifying. He saw a highly suspicious boil, or a "bump," on her lower half.</p>
+
+            <p>Dave was shocked. He looked at her and asked, <em>"What is that???"</em></p>
+
+            <p>Instead of explaining it, Mya went on the offensive. She started a massive argument. She refused to tell him what the bump was, got furious that he was questioning her, and then completely cut him off. She blocked his calls. She ignored his Facebook messages. She started playing hard to get all over again.</p>
+
+            <p>And it worked.</p>
+
+            <p>Today, Dave is going crazy with anxiety. He leaves her messages every single day. He complains about her to all his friends. He even lets his ex, Deborah, come over every once in a while just to prove to himself that he "has options"—but everyone knows he is completely obsessed with Mya.</p>
+
+            <p>Mya has all the power. She ignores him one day and acts commanding the next, and Dave is addicted to the chase. She even tells Dave to his face that she "needs to go call her ex-boyfriend," intentionally pouring gasoline on Dave's jealousy.</p>
+
+            <p>Dave claims the sex isn't even that great. He claims he doesn't care about her ex. But his bank account, his anxiety, and his daily text messages tell a completely different story.</p>
+
+            <blockquote>
+                So... how does a 20-something woman get this kind of absolute, terrifying power over a 50-year-old man? How do you get robbed, held hostage in a car, and exposed to a suspicious disease... and still buy the person roses? 
+                <br><br>
+                <a href="https://luckypikas.github.io/loveqna/CASE-FILES/white-knight-trap.html">Read the full Behavioral Case File Investigation here.</a>
+            </blockquote>
+
+            <div class="tags">
+                <h2>Tags</h2>
+                <a class="tag" href="#">Storytime</a>
+                <a class="tag" href="#">Financial Scams</a>
+                <a class="tag" href="#">Trauma Bonding</a>
+                <a class="tag" href="#">Red Flags</a>
+            </div>
+
+            <div class="related">
+                <h2>Related Investigations</h2>
+                <ul>
+                    <li><a href="https://luckypikas.github.io/loveqna/CASE-FILES/white-knight-trap.html">Case File 001: The White Knight Trap (Analysis)</a></li>
+                    <li><a href="https://luckypikas.github.io/loveqna/CONTENTS/incompatibility-awareness.html">Incompatibility Awareness</a></li>
+                </ul>
+            </div>
+
+            <div class="page-nav">
+                <a href="https://luckypikas.github.io/loveqna/contents.html">← Contents Page</a>
+                <a href="#top">↑ Back to Top</a>
+                <a href="https://loveqna.substack.com/" target="_blank">More Stories on Substack →</a>
+            </div>
+
+        </div>
+    </main>
+
+</div>
+
+<footer>
+    © 2026 LoveQnA Library | Lucky Pikas Studios
+</footer>
+
+</body>
+</html>
