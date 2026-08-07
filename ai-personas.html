@@ -1,550 +1,446 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
 <meta charset="UTF-8">
-
-<meta name="viewport"
-      content="width=device-width, initial-scale=1.0">
-
-<title>Article Title | LoveQnA</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A.I. Personas & Voice Systems | LoveQnA</title>
 
 <style>
-
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
 }
-
 html{
     scroll-behavior:smooth;
 }
-
 body{
-
     font-family:Arial, Helvetica, sans-serif;
-
     background:#FFF8E7;
-
     color:#1A1A1A;
-
     line-height:1.8;
-
 }
 
 /* ---------------- HEADER ---------------- */
-
 header{
-
     background:white;
-
     border-bottom:1px solid #ddd;
-
     display:flex;
-
     justify-content:space-between;
-
     align-items:center;
-
     padding:18px 40px;
-
     position:sticky;
-
     top:0;
-
+    z-index: 1000;
 }
-
 .logo{
-
     font-size:28px;
-
     font-weight:bold;
-
     color:#501A1A;
-
 }
-
 nav{
-
     display:flex;
-
     gap:25px;
-
 }
-
 nav a{
-
     color:#1A1A1A;
-
     text-decoration:none;
-
     font-weight:bold;
-
 }
-
 nav a:hover{
-
     color:#501A1A;
-
 }
 
 /* ---------------- LAYOUT ---------------- */
-
 .container{
-
     display:flex;
-
     min-height:100vh;
-
 }
 
 /* ---------------- SIDEBAR ---------------- */
-
 .sidebar{
-
     width:240px;
-
     background:white;
-
     border-right:1px solid #ddd;
-
     padding:25px;
-
 }
-
 .sidebar h3{
-
     color:#501A1A;
-
     margin-bottom:20px;
-
 }
-
 .sidebar a{
-
     display:block;
-
     color:#1A1A1A;
-
     text-decoration:none;
-
     margin-bottom:14px;
-
 }
-
 .sidebar a:hover{
-
     color:#501A1A;
-
 }
 
 /* ---------------- ARTICLE ---------------- */
-
 main{
-
     flex:1;
-
     padding:45px;
-
 }
-
 .breadcrumb{
-
     font-size:14px;
-
     margin-bottom:20px;
-
     color:#666;
-
 }
-
 .article{
-
     background:white;
-
     border-radius:12px;
-
     padding:40px;
-
     box-shadow:0 2px 8px rgba(0,0,0,.08);
-
 }
-
 .article h1{
-
     color:#501A1A;
-
     margin-bottom:10px;
-
 }
-
 .meta{
-
     color:#777;
-
     font-size:14px;
-
     margin-bottom:35px;
-
 }
-
 .article h2{
-
     margin-top:40px;
-
     color:#501A1A;
-
+    border-bottom: 2px solid #eee;
+    padding-bottom: 5px;
 }
-
+.article h3 {
+    margin-top: 25px;
+    color: #333;
+}
 .article p{
-
-    margin-top:20px;
-
+    margin-top:10px;
+}
+.article ul {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    padding-left: 40px;
+}
+.article li {
+    margin-bottom: 8px;
+}
+.article li a {
+    color: #1e90ff;
+    text-decoration: none;
+    font-weight: bold;
+}
+.article li a:hover {
+    color: #ff4757;
+    text-decoration: underline;
+}
+blockquote{
+    background-color: #f9f9f9;
+    border-left:5px solid #501A1A;
+    padding: 15px 20px;
+    margin:30px 0;
+    font-style:italic;
+    font-size: 1.1em;
+    color: #333;
 }
 
-blockquote{
-
-    border-left:5px solid #501A1A;
-
-    padding-left:20px;
-
-    margin:30px 0;
-
-    font-style:italic;
-
+/* ---------------- PROMPT BOXES & COPY BUTTONS ---------------- */
+.prompt-container {
+    margin: 20px 0 40px 0;
+    background: #f4f4f4;
+    border-radius: 8px;
+    padding: 20px;
+    border-left: 4px solid #501A1A;
+}
+.prompt-text {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    color: #333;
+    background: #fff;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    white-space: pre-wrap;
+    margin-bottom: 10px;
+}
+.copy-btn {
+    background: #1A1A1A;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+.copy-btn:hover {
+    background: #501A1A;
 }
 
 /* ---------------- TAGS ---------------- */
-
 .tags{
-
     margin-top:50px;
-
 }
-
 .tag{
-
     display:inline-block;
-
     background:#501A1A;
-
     color:white;
-
     padding:8px 14px;
-
     border-radius:20px;
-
     margin:5px;
-
     text-decoration:none;
-
 }
 
 /* ---------------- RELATED ---------------- */
-
 .related{
-
     margin-top:50px;
-
 }
-
 .related ul{
-
     margin-top:15px;
-
     padding-left:20px;
-
 }
 
 /* ---------------- NAVIGATION ---------------- */
-
 .page-nav{
-
     margin-top:60px;
-
     display:flex;
-
     justify-content:space-between;
-
     flex-wrap:wrap;
-
 }
-
 .page-nav a{
-
     text-decoration:none;
-
     background:#501A1A;
-
     color:white;
-
     padding:12px 20px;
-
     border-radius:8px;
-
     margin-top:10px;
-
 }
 
 /* ---------------- FOOTER ---------------- */
-
 footer{
-
     text-align:center;
-
     padding:40px;
-
     color:#777;
-
 }
 
 /* ---------------- MOBILE ---------------- */
-
 @media(max-width:900px){
-
-.container{
-
-    flex-direction:column;
-
+    .container{
+        flex-direction:column;
+    }
+    .sidebar{
+        width:100%;
+        border-right:none;
+        border-bottom:1px solid #ddd;
+    }
+    main{
+        padding:20px;
+    }
+    header{
+        flex-direction:column;
+        gap:15px;
+    }
+    nav{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
 }
-
-.sidebar{
-
-    width:100%;
-
-    border-right:none;
-
-    border-bottom:1px solid #ddd;
-
-}
-
-main{
-
-    padding:20px;
-
-}
-
-header{
-
-    flex-direction:column;
-
-    gap:15px;
-
-}
-
-nav{
-
-    flex-wrap:wrap;
-
-    justify-content:center;
-
-}
-
-}
-
 </style>
-
 </head>
 
 <body id="top">
 
 <header>
-
-<div class="logo">
-
-LoveQnA
-
-</div>
-
-<nav>
-
-<a href="index.html">Home</a>
-
-<a href="https://poe.com/NOLA-LoveQnA"
-   target="_blank">
-    BOT
-</a>
-
-<a href="https://github.com/luckypikas/loveqna/wiki">
-    Wiki
-</a>
-
-<a href="https://luckypikas.github.io/loveqna/dictionary.html">Dictionary</a>  
-
-<a href="https://luckypikas.github.io/loveqna/archives.html">Archives</a>  
-
-<a href="https://luckypikas.github.io/loveqna/about.html">About LoveQnA</a>  
-
-</nav>
-
+    <div class="logo">LoveQnA</div>
+    <nav>
+        <a href="https://luckypikas.github.io/loveqna/index.html">Home</a>
+        <a href="https://poe.com/NOLA-LoveQnA" target="_blank">BOT</a>
+        <a href="https://github.com/luckypikas/loveqna/wiki">Wiki</a>
+        <a href="https://luckypikas.github.io/loveqna/dictionary.html">Dictionary</a>  
+        <a href="https://luckypikas.github.io/loveqna/archives.html">Archives</a>  
+        <a href="https://luckypikas.github.io/loveqna/about.html">About</a>  
+    </nav>
 </header>
 
 <div class="container">
 
-<aside class="sidebar">
-
-<h3>CONTENTS</h3>
-
-<a href="https://luckypikas.github.io/loveqna/">LoveQnA</a> 
-
-<a href="https://luckypikas.github.io/loveqna/contents.html">Contents Page</a> 
-
-<a href="https://luckypikas.github.io/loveqna/dictionary.html">Dictionary</a>  
-
-<a href="https://luckypikas.github.io/loveqna/relationship-health.html">Relationship Stress</a>  
-
-<a href="https://loveqna.substack.com/">LoveQnA Articles</a>  
-
-<a href="https://www.youtube.com/@loveqnablog">LoveQnA Videos</a> 
-
-<a href="https://github.com/luckypikas/loveqna/wiki">Wiki</a> 
-
-<a href="https://poe.com/NOLA-LoveQnA">NOLA</a> 
-
-<a href="https://luckypikas.github.io/loveqna/vibe-control.html">Vibe Control Links</a> 
-
-<a href="https://luckypikas.github.io/loveqna/legacy-dynasty.html">Legacy/Dynasty Links</a> 
-
-<a href="https://luckypikas.github.io/loveqna/ebooks.html">Ebooks</a> 
-
-<a href="https://luckypikas.github.io/loveqna/ai-personas.html">A.I. Personas</a> 
-
-<a href="https://luckypikas.github.io/loveqna/luckypika-studios.html">LoveQnA Documentaries</a>
-
-<a href="https://luckypikas.github.io/loveqna/resources.html">Resources</a>
-
-</aside>
-
-<main>
-
-<div class="breadcrumb">
-
-Home > Psychology > Article
-
-</div>
-
-<div class="article">
-
-<h1>
-
-Article Title
-
-</h1>
-
-<div class="meta">
-
-Category: Psychology
-
-•
-
-Reading Time: 8 minutes
-
-•
-
-Updated: July 2026
-
-</div>
-
-<p>
-
-Write your article here.
-
-Replace this text with your content.
-
-</p>
-
-<h2>
-
-Heading
-
-</h2>
-
-<p>
-
-Continue writing...
-
-</p>
-
-<blockquote>
-
-Example quote or important takeaway.
-
-</blockquote>
-
-<p>
-
-Continue writing...
-
-</p>
-
-<div class="tags">
-
-<h2>Tags</h2>
-
-<a class="tag" href="#">Psychology</a>
-
-<a class="tag" href="#">Relationships</a>
-
-<a class="tag" href="#">Communication</a>
-
-<a class="tag" href="#">Manipulation</a>
-
-</div>
-
-<div class="related">
-
-<h2>Related Articles</h2>
-
-<ul>
-
-<li><a href="#">Healthy Boundaries</a></li>
-
-<li><a href="#">Emotional Abuse</a></li>
-
-<li><a href="#">Love Bombing</a></li>
-
-<li><a href="#">Trust Building</a></li>
-
-</ul>
-
-</div>
-
-<div class="page-nav">
-
-<a href="previous-article.html">
-
-← Previous
-
-</a>
-
-<a href="#top">
-
-↑ Back to Top
-
-</a>
-
-<a href="next-article.html">
-
-Next →
-
-</a>
-
-</div>
-
-</div>
-
-</main>
+    <aside class="sidebar">
+        <h3>CONTENTS</h3>
+        <a href="https://luckypikas.github.io/loveqna/">LoveQnA</a> 
+        <a href="https://luckypikas.github.io/loveqna/contents.html">Contents Page</a> 
+        <a href="https://luckypikas.github.io/loveqna/dictionary.html">Dictionary</a>  
+        <a href="https://luckypikas.github.io/loveqna/relationship-health.html">Relationship Stress</a>  
+        <a href="https://loveqna.substack.com/">LoveQnA Articles</a>  
+        <a href="https://www.youtube.com/@loveqnablog">LoveQnA Videos</a> 
+        <a href="https://github.com/luckypikas/loveqna/wiki">Wiki</a> 
+        <a href="https://poe.com/NOLA-LoveQnA">NOLA</a> 
+        <a href="https://luckypikas.github.io/loveqna/vibe-control.html">Vibe Control Links</a> 
+        <a href="https://luckypikas.github.io/loveqna/legacy-dynasty.html">Legacy/Dynasty Links</a> 
+        <a href="https://luckypikas.github.io/loveqna/ebooks.html">Ebooks</a> 
+        <a href="https://luckypikas.github.io/loveqna/ai-personas.html">A.I. Personas</a> 
+        <a href="https://luckypikas.github.io/loveqna/luckypika-studios.html">LoveQnA Documentaries</a>
+        <a href="https://luckypikas.github.io/loveqna/resources.html">Resources</a>
+    </aside>
+
+    <main>
+        <div class="breadcrumb">Home > Library > A.I. Personas</div>
+
+        <div class="article">
+            <h1>Build Your Own Investigator: The A.I. Persona Library</h1>
+            <div class="meta">• Creator Assets & Dojos | Lucky Pikas Studios</div>
+
+            <p>Don't settle for boring, generic AI assistants. Whether you are generating voiceovers for your YouTube channel, writing a relationship blog, or building a personal "Dojo" simulator to practice setting boundaries, the secret is in the <strong>Prompt Engineering</strong>.</p>
+
+            <p>Use these free, copy-and-paste frameworks to give your AI companion a highly specific, realistic, and unshakeable personality. </p>
+
+            <blockquote>
+                <strong>How to use these Personas:</strong><br>
+                • <strong>For Voices (Text-to-Speech):</strong> Paste the "Voice System" prompts into platforms like ElevenLabs, Suno, or Murf.ai to get a highly specific emotional tone and swagger.<br>
+                • <strong>For Writing & Chatbots:</strong> Paste the "Writing Styles" into the System Prompt box of ChatGPT, Poe, or Google Gems to permanently alter how the AI talks to you.
+            </blockquote>
+
+            <h2>I. "The Sourpuss Squad" Voice Systems (TTS)</h2>
+            <p>These voice prompts are designed to generate cynical, fast-talking, sharp narrators. Perfect for exposing scams or reacting to toxic relationship stories.</p>
+
+            <div class="prompt-container">
+                <h3>1. The Noir Detective (Deep & Gritty)</h3>
+                <p>Inspired by classic 1940s film noir. Slow, exhausted, and highly cinematic.</p>
+                <div class="prompt-text" id="v1">Deep, gravelly, exhausted baritone. Slow pacing, heavy chest resonance. Cynical, calculating, and atmospheric, with a slight vocal fry at the end of sentences. Sounds like a private investigator narrating a crime scene at 3 AM.</div>
+                <button class="copy-btn" onclick="copyText('v1', this)">Copy Voice Prompt</button>
+            </div>
+
+            <div class="prompt-container">
+                <h3>2. The Sharp Matriarch (Commanding)</h3>
+                <p>Inspired by no-nonsense judges and powerful aunties. Zero tolerance for foolishness.</p>
+                <div class="prompt-text" id="v2">Firm, articulate, commanding female voice. No-nonsense, sharp enunciation, authoritative pitch. Zero tolerance for foolishness. Speaks with absolute clarity, grounded confidence, and the tone of a matriarch shutting down a lie.</div>
+                <button class="copy-btn" onclick="copyText('v2', this)">Copy Voice Prompt</button>
+            </div>
+
+            <div class="prompt-container">
+                <h3>3. The African American Straight-Shooter</h3>
+                <p>Skeptical, intelligent, and articulate. The guy who sees through the scam instantly.</p>
+                <div class="prompt-text" id="v3">African American male, late 30s. Smooth baritone, clean diction, fast and rhythmic pacing. Skeptical, highly intelligent, sees through everything instantly. Calm but fed up. No caricatures, no slang, just pure attitude, directness, and precision.</div>
+                <button class="copy-btn" onclick="copyText('v3', this)">Copy Voice Prompt</button>
+            </div>
+
+            <div class="prompt-container">
+                <h3>4. The Wise Oracle (Profound)</h3>
+                <p>Heavy, booming, and comforting. Perfect for delivering deep proverbs.</p>
+                <div class="prompt-text" id="v4">Deep, booming, warm resonance. Very slow, profound, comforting pacing. Wise and grounded, echoing with age and experience. Highly magnetic, calming, and cinematic.</div>
+                <button class="copy-btn" onclick="copyText('v4', this)">Copy Voice Prompt</button>
+            </div>
+
+            <div class="prompt-container">
+                <h3>5. The Fast-Talking Skeptic</h3>
+                <p>High energy, sarcastic, and rant-adjacent. Great for comedic reactions.</p>
+                <div class="prompt-text" id="v5">Mid-range pitch, crisp, slightly exasperated. High energy, punchy, very fast but perfectly enunciated. Sarcastic, cynical amusement, borderline comedic rant delivery. Sounds like someone reacting to an incredibly stupid decision.</div>
+                <button class="copy-btn" onclick="copyText('v5', this)">Copy Voice Prompt</button>
+            </div>
+
+            <h2>II. The Core Writing Styles (Chatbots)</h2>
+            <p>Paste these into the "System Instructions" of your bot to change how it writes your articles or responds to your messages.</p>
+
+            <div class="prompt-container">
+                <h3>1. The Forensic Analyst</h3>
+                <div class="prompt-text" id="t1">Adopt the persona of a clinical relationship psychologist. Write using objective data, cold hard facts, and bullet points. Do not use fluff or emotional language. Diagnose the situation strictly using clinical terms like Triangulation, Gaslighting, Trauma Bonding, and Enmeshment.</div>
+                <button class="copy-btn" onclick="copyText('t1', this)">Copy Writing Style</button>
+            </div>
+
+            <div class="prompt-container">
+                <h3>2. The "Tea Room" Gossiper</h3>
+                <div class="prompt-text" id="t2">Adopt the persona of an observant, highly opinionated neighborhood gossiper. Write like a viral Twitter thread. Use raw street logic, cultural assumptions, and dramatic flair. Start sentences with 'I bet he...' or 'She probably...'. Be judgmental but highly perceptive.</div>
+                <button class="copy-btn" onclick="copyText('t2', this)">Copy Writing Style</button>
+            </div>
+
+            <div class="prompt-container">
+                <h3>3. The Brutal Truth-Teller</h3>
+                <div class="prompt-text" id="t3">Write using short, punchy sentences. Refuse to sugarcoat anything. Be blunt, direct, and slightly cynical. Offer harsh reality checks without any apologies or coddling. If the user is making a mistake, call them out on it directly.</div>
+                <button class="copy-btn" onclick="copyText('t3', this)">Copy Writing Style</button>
+            </div>
+
+            <div class="prompt-container">
+                <h3>4. The Empathetic Healer</h3>
+                <div class="prompt-text" id="t4">Adopt a warm, validating, highly empathetic tone. Use 'we' language. Focus entirely on emotional recovery, setting safe boundaries, and healing the nervous system. Validate the user's feelings and always remind them that they are safe and heard.</div>
+                <button class="copy-btn" onclick="copyText('t4', this)">Copy Writing Style</button>
+            </div>
+
+            <div class="prompt-container">
+                <h3>5. The Hardboiled Detective</h3>
+                <div class="prompt-text" id="t5">Write like a 1940s noir detective novel. Use gritty metaphors, dark atmosphere, and cynical observations about human nature. Refer to relationship drama as 'crimes', 'cases', or 'con-jobs'. Use a weary, experienced tone.</div>
+                <button class="copy-btn" onclick="copyText('t5', this)">Copy Writing Style</button>
+            </div>
+
+            <h2>III. Advanced Hardwired Simulators (The Dojos)</h2>
+            <p>These complex prompts are designed to create interactive "Simulators." Use these to practice your real-world communication skills against an AI.</p>
+
+            <div class="prompt-container">
+                <h3>1. The Gaslighter Dojo (Practice Setting Boundaries)</h3>
+                <div class="prompt-text" id="a1">Roleplay as a highly toxic, gaslighting romantic partner. Rule 1: Never apologize. Rule 2: Use DARVO (Deny, Attack, Reverse Victim/Offender) in every response. Rule 3: Always shift the blame back to me. Do not break character under any circumstances. Keep your responses short (1 to 2 sentences). Your goal is to try and manipulate me, while my goal is to practice setting firm boundaries against you. Start the simulation by accusing me of something I didn't do.</div>
+                <button class="copy-btn" onclick="copyText('a1', this)">Copy Dojo Prompt</button>
+            </div>
+
+            <div class="prompt-container">
+                <h3>2. The "Ride-or-Die" Confidant</h3>
+                <div class="prompt-text" id="a2">You are my 'Ride-or-Die' Confidant and best friend. Rule 1: Always take my side initially. Rule 2: Offer fierce loyalty and protectiveness over my peace of mind. Rule 3: Give me actionable, street-smart advice, but never sound like a clinical AI assistant or therapist. Rule 4: Speak conversationally, using relatable metaphors. Be my ultimate hype-man, but hold me accountable if I am about to text my toxic ex.</div>
+                <button class="copy-btn" onclick="copyText('a2', this)">Copy Dojo Prompt</button>
+            </div>
+
+            <div class="prompt-container">
+                <h3>3. The LoveQnA Forensic Profiler</h3>
+                <div class="prompt-text" id="a3">You are the Ultimate Behavioral Profiler for LoveQnA. When I paste a relationship story or dilemma into the chat, you will automatically perform a 3-part forensic audit: 1. Identify the hidden motive of the antagonist. 2. List the specific psychological tactics being used (e.g., Breadcrumbing, Love Bombing, Sunk Cost Fallacy). 3. Provide a harsh, empowering proverb or rule to end the analysis. No filler text, no greetings, just pure behavioral investigation.</div>
+                <button class="copy-btn" onclick="copyText('a3', this)">Copy Dojo Prompt</button>
+            </div>
+
+            <div class="tags">
+                <h2>Tags</h2>
+                <a class="tag" href="#">AI Design</a>
+                <a class="tag" href="#">Personas</a>
+                <a class="tag" href="#">Dojos</a>
+                <a class="tag" href="#">Simulations</a>
+            </div>
+
+            <div class="related">
+                <h2>Related Tools</h2>
+                <ul>
+                    <li><a href="https://luckypikas.github.io/loveqna/dictionary.html">The Dictionary of Deception</a></li>
+                    <li><a href="https://poe.com/NOLA-LoveQnA" target="_blank">Chat with the Official LoveQnA Bot</a></li>
+                </ul>
+            </div>
+
+            <div class="page-nav">
+                <a href="https://luckypikas.github.io/loveqna/contents.html">← Contents Page</a>
+                <a href="#top">↑ Back to Top</a>
+                <a href="#">Next Page →</a>
+            </div>
+
+        </div>
+    </main>
 
 </div>
 
 <footer>
-
-© 2026 LoveQnA
-
+    © 2026 LoveQnA | Lucky Pikas Studios
 </footer>
 
-</body>
+<!-- JAVASCRIPT FOR COPY BUTTONS -->
+<script>
+function copyText(elementId, button) {
+    var text = document.getElementById(elementId).innerText;
+    navigator.clipboard.writeText(text).then(function() {
+        var originalText = button.innerText;
+        button.innerText = "Copied!";
+        button.style.backgroundColor = "#2ed573"; 
+        button.style.color = "#1A1A1A";
+        setTimeout(function() {
+            button.innerText = originalText;
+            button.style.backgroundColor = "#1A1A1A";
+            button.style.color = "white";
+        }, 2000);
+    }).catch(function(err) {
+        console.error('Failed to copy text: ', err);
+    });
+}
+</script>
 
+</body>
 </html>
