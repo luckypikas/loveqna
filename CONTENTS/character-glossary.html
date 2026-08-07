@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Ultimate Character Glossary | LoveQnA</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+html{
+    scroll-behavior:smooth;
+}
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#FFF8E7;
+    color:#1A1A1A;
+    line-height:1.8;
+}
+
+/* ---------------- HEADER ---------------- */
+header{
+    background:white;
+    border-bottom:1px solid #ddd;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 40px;
+    position:sticky;
+    top:0;
+    z-index: 1000;
+}
+.logo{
+    font-size:28px;
+    font-weight:bold;
+    color:#501A1A;
+}
+nav{
+    display:flex;
+    gap:25px;
+}
+nav a{
+    color:#1A1A1A;
+    text-decoration:none;
+    font-weight:bold;
+}
+nav a:hover{
+    color:#501A1A;
+}
+
+/* ---------------- LAYOUT ---------------- */
+.container{
+    display:flex;
+    min-height:100vh;
+}
+
+/* ---------------- SIDEBAR ---------------- */
+.sidebar{
+    width:240px;
+    background:white;
+    border-right:1px solid #ddd;
+    padding:25px;
+}
+.sidebar h3{
+    color:#501A1A;
+    margin-bottom:20px;
+}
+.sidebar a{
+    display:block;
+    color:#1A1A1A;
+    text-decoration:none;
+    margin-bottom:14px;
+}
+.sidebar a:hover{
+    color:#501A1A;
+}
+
+/* ---------------- ARTICLE ---------------- */
+main{
+    flex:1;
+    padding:45px;
+}
+.breadcrumb{
+    font-size:14px;
+    margin-bottom:20px;
+    color:#666;
+}
+.article{
+    background:white;
+    border-radius:12px;
+    padding:40px;
+    box-shadow:0 2px 8px rgba(0,0,0,.08);
+}
+.article h1{
+    color:#501A1A;
+    margin-bottom:10px;
+}
+.meta{
+    color:#777;
+    font-size:14px;
+    margin-bottom:35px;
+}
+.article h2{
+    margin-top:40px;
+    color:#501A1A;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 5px;
+}
+.article h3 {
+    margin-top: 25px;
+    color: #333;
+}
+.article p{
+    margin-top:10px;
+}
+.article ul {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    padding-left: 40px;
+}
+.article li {
+    margin-bottom: 12px;
+}
+.article li a {
+    color: #1e90ff;
+    text-decoration: none;
+    font-weight: bold;
+}
+.article li a:hover {
+    color: #ff4757;
+    text-decoration: underline;
+}
+blockquote{
+    background-color: #f9f9f9;
+    border-left:5px solid #501A1A;
+    padding: 15px 20px;
+    margin:30px 0;
+    font-style:italic;
+    font-size: 1.1em;
+    color: #333;
+}
+
+/* ---------------- TAGS ---------------- */
+.tags{
+    margin-top:50px;
+}
+.tag{
+    display:inline-block;
+    background:#501A1A;
+    color:white;
+    padding:8px 14px;
+    border-radius:20px;
+    margin:5px;
+    text-decoration:none;
+}
+
+/* ---------------- RELATED ---------------- */
+.related{
+    margin-top:50px;
+}
+.related ul{
+    margin-top:15px;
+    padding-left:20px;
+}
+
+/* ---------------- NAVIGATION ---------------- */
+.page-nav{
+    margin-top:60px;
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+}
+.page-nav a{
+    text-decoration:none;
+    background:#501A1A;
+    color:white;
+    padding:12px 20px;
+    border-radius:8px;
+    margin-top:10px;
+}
+
+/* ---------------- FOOTER ---------------- */
+footer{
+    text-align:center;
+    padding:40px;
+    color:#777;
+}
+
+/* ---------------- MOBILE ---------------- */
+@media(max-width:900px){
+    .container{
+        flex-direction:column;
+    }
+    .sidebar{
+        width:100%;
+        border-right:none;
+        border-bottom:1px solid #ddd;
+    }
+    main{
+        padding:20px;
+    }
+    header{
+        flex-direction:column;
+        gap:15px;
+    }
+    nav{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+}
+</style>
+</head>
+
+<body id="top">
+
+<header>
+    <div class="logo">LoveQnA</div>
+    <nav>
+        <a href="https://luckypikas.github.io/loveqna/index.html">Home</a>
+        <a href="https://poe.com/NOLA-LoveQnA" target="_blank">BOT</a>
+        <a href="https://github.com/luckypikas/loveqna/wiki">Wiki</a>
+        <a href="https://luckypikas.github.io/loveqna/dictionary.html">Dictionary</a>  
+        <a href="https://luckypikas.github.io/loveqna/archives.html">Archives</a>  
+        <a href="https://luckypikas.github.io/loveqna/about.html">About</a>  
+    </nav>
+</header>
+
+<div class="container">
+
+    <aside class="sidebar">
+        <h3>CONTENTS</h3>
+        <a href="https://luckypikas.github.io/loveqna/">LoveQnA</a> 
+        <a href="https://luckypikas.github.io/loveqna/contents.html">Contents Page</a> 
+        <a href="https://luckypikas.github.io/loveqna/dictionary.html">Dictionary</a>  
+        <a href="https://luckypikas.github.io/loveqna/relationship-health.html">Relationship Stress</a>  
+        <a href="https://loveqna.substack.com/">LoveQnA Articles</a>  
+        <a href="https://www.youtube.com/@loveqnablog">LoveQnA Videos</a> 
+        <a href="https://github.com/luckypikas/loveqna/wiki">Wiki</a> 
+        <a href="https://poe.com/NOLA-LoveQnA">NOLA</a> 
+        <a href="https://luckypikas.github.io/loveqna/vibe-control.html">Vibe Control Links</a> 
+        <a href="https://luckypikas.github.io/loveqna/legacy-dynasty.html">Legacy/Dynasty Links</a> 
+        <a href="https://luckypikas.github.io/loveqna/ebooks.html">Ebooks</a> 
+        <a href="https://luckypikas.github.io/loveqna/ai-personas.html">A.I. Personas</a> 
+        <a href="https://luckypikas.github.io/loveqna/luckypika-studios.html">LoveQnA Documentaries</a>
+        <a href="https://luckypikas.github.io/loveqna/resources.html">Resources</a>
+    </aside>
+
+    <main>
+        <div class="breadcrumb">Home > Psychology > Lexicon > The Ultimate Character Glossary</div>
+
+        <div class="article">
+            <h1>The Ultimate Character Glossary: 100 Archetypes of the Dating Market</h1>
+            <div class="meta">• Behavioral Profiling | Lucky Pikas Studios</div>
+
+            <p>To survive modern dating, you must learn how to accurately label the players on the field. Having the correct vocabulary elevates your instincts from a vague "hunch" to professional-level forensic profiling. When you can accurately name a toxic trait, you strip it of its power.</p>
+
+            <p>Below is a master list of 100 character archetypes and relationship roles. These terms range from classic cultural descriptions to clinical behavioral profiles. Study them to recognize incompatibility signs, irrational behavior, and hidden motives before you commit.</p>
+
+            <h2>Part 1: The Pursuers, The Hunted, & The Chasers</h2>
+            <ul>
+                <li><strong>Siren:</strong> A highly alluring individual who uses intense physical appeal and mystery to lure partners into destructive, draining situations.</li>
+                <li><strong>Chaser:</strong> A person addicted strictly to the pursuit. They lose romantic interest the exact moment their target submits to them.</li>
+                <li><strong>Secret Admirer:</strong> Someone who observes and desires a target from afar, often lacking the confidence or appropriate social opportunity to make themselves known.</li>
+                <li><strong>Pursuer:</strong> An individual who actively and intentionally initiates romantic contact, driving the pace of the interaction.</li>
+                <li><strong>Courter:</strong> A traditional pursuer who relies on patience, consistency, and formal etiquette to build a foundation of trust.</li>
+                <li><strong>Pickup Artist (PUA):</strong> A person who studies mechanical, psychological manipulation to bypass a target's defenses for short-term conquests.</li>
+                <li><strong>The White Knight:</strong> A person with a severe savior complex who tries to rescue chaotic partners, usually resulting in their own financial and emotional ruin.</li>
+                <li><strong>The Orbiters:</strong> People who keep a safe distance but constantly watch your social media stories, waiting for a moment of weakness to strike.</li>
+                <li><strong>The Rebound:</strong> A temporary, distraction relationship used strictly to mask the pain and loneliness of a recent breakup.</li>
+                <li><strong>The Placeholder:</strong> A partner kept around purely out of convenience and fear of being alone, until someone better comes along.</li>
+            </ul>
+
+            <h2>Part 2: The Scammers, Manipulators, & Predators</h2>
+            <ul>
+                <li><strong>Romantic Scammer:</strong> A highly calculated predator who fakes love and future plans entirely to drain a victim's financial assets.</li>
+                <li><strong>Con-Artist:</strong> A master manipulator who builds profound, false trust to steal both resources and a victim's sense of reality.</li>
+                <li><strong>Swindler:</strong> Someone who uses overt charm to cheat a partner out of money during the intoxicating "honeymoon phase."</li>
+                <li><strong>Catfish:</strong> A person who fabricates a completely false digital persona to lure someone into an emotional relationship.</li>
+                <li><strong>Grifter:</strong> A sophisticated manipulator who creates complex, believable sob stories to extract money, housing, and sympathy.</li>
+                <li><strong>Huckster:</strong> A low-level opportunist constantly looking for a free meal or a way to live off a partner's hard work.</li>
+                <li><strong>Chiseler:</strong> A financial leech who constantly negotiates, borrows, and chips away at a partner's resources and boundaries.</li>
+                <li><strong>Compulsive Liar:</strong> A partner who fabricates stories about mundane, everyday details purely for the psychological thrill of the deception.</li>
+                <li><strong>Love Bomber:</strong> A manipulator who overwhelms a new target with extreme affection and promises, designed to trap them before the abuse begins.</li>
+                <li><strong>Future Faker:</strong> A person who paints vivid pictures of marriage and vacations to extract immediate benefits, with absolutely no intention of following through.</li>
+            </ul>
+
+            <h2>Part 3: The Players & The Uncommitted</h2>
+            <ul>
+                <li><strong>Fuck-Boy (The Time-Waster):</strong> A charismatic but highly unreliable male who feigns romantic interest solely for temporary physical access.</li>
+                <li><strong>Playboy / Playgirl:</strong> A charismatic, non-committal individual who openly enjoys the single lifestyle and dates multiple people simultaneously.</li>
+                <li><strong>Waffler:</strong> A person who cannot make a firm decision, constantly bouncing back and forth between two partners (often a new partner and an ex).</li>
+                <li><strong>Cheater:</strong> Someone who violates the foundational boundaries of a relationship by stepping out physically or emotionally with someone else.</li>
+                <li><strong>Sidepiece / Sidechick:</strong> The hidden, secondary partner who accepts fractional attention in the shadows of a primary relationship.</li>
+                <li><strong>Middleman:</strong> A male side-partner who is kept around for validation or resources while the woman remains committed elsewhere.</li>
+                <li><strong>Paramour:</strong> An illicit lover, usually involved in a highly secretive, passionate affair with a married person.</li>
+                <li><strong>Friends-With-Benefits (FWB):</strong> A purely physical arrangement lacking romantic exclusivity that almost always ends in emotional imbalance.</li>
+                <li><strong>Booty-Call:</strong> A highly transactional, late-night request for intimacy devoid of any actual courtship or respect.</li>
+                <li><strong>John and Jane:</strong> The generic buyer of intimacy, or a perfectly average-looking couple hiding deep dysfunction in plain sight.</li>
+            </ul>
+
+            <h2>Part 4: The Entitled, The Toxic, & The Immature</h2>
+            <ul>
+                <li><strong>Simp:</strong> A person who over-invests emotionally and financially in a prospect who offers absolutely zero reciprocal respect.</li>
+                <li><strong>Trick:</strong> Someone who is willingly or blindly used for their resources in exchange for the mere illusion of romantic access.</li>
+                <li><strong>Princess:</strong> A highly entitled partner who expects to be catered to and financed without bringing any reciprocal value to the table.</li>
+                <li><strong>Mama's Boy:</strong> A man whose primary emotional enmeshment remains with his mother, overriding his ability to protect or prioritize his partner.</li>
+                <li><strong>Bad-Boy:</strong> A rebellious, unpredictable male who attracts partners through a dangerous, anti-authoritarian persona.</li>
+                <li><strong>Nice Guy:</strong> A man who uses basic politeness as a covert contract, expecting romantic rewards for simply not being aggressive.</li>
+                <li><strong>Nice Girl:</strong> A woman who hides her actual relationship demands behind a facade of extreme compliance and sweetness.</li>
+                <li><strong>Hoochie (Mama/Daddy):</strong> An overly provocative, attention-seeking individual who relies entirely on overt sexuality rather than substance.</li>
+                <li><strong>Hoodrat:</strong> An unambitious hypocrite who gossips, takes shortcuts, and constantly brings chaotic energy to the relationship.</li>
+                <li><strong>Karen:</strong> A highly entitled, combative individual who uses aggression and complaints to dominate their partner and their environment.</li>
+                <li><strong>Slob:</strong> A partner who lacks baseline personal hygiene and completely refuses to maintain their physical environment.</li>
+                <li><strong>Clown:</strong> A person who repeatedly embarrasses themselves by publicly returning to highly toxic, disrespectful partners.</li>
+                <li><strong>Buster:</strong> A party-crasher; someone who fundamentally brings the energy of the room down and emits deeply insecure vibes.</li>
+                <li><strong>Lolita:</strong> A younger individual who uses feigned innocence and youth to manipulate and extract resources from older partners.</li>
+                <li><strong>Nympho (Hypersexual):</strong> A person whose romantic interactions are entirely driven by a compulsive need for physical intimacy.</li>
+                <li><strong>Sex Addict:</strong> A partner whose compulsive need for physical encounters destroys their ability to maintain loyalty and emotional safety.</li>
+                <li><strong>Ogler:</strong> A person who chronically and inappropriately stares at other people, deeply disrespecting their partner in public.</li>
+                <li><strong>Greedy Lover:</strong> A partner who constantly demands emotional, physical, and financial investments but viciously refuses to reciprocate.</li>
+                <li><strong>Hoe (Promiscuous Opportunist):</strong> An individual who engages in reckless, transactional physical relationships with no regard for boundaries.</li>
+                <li><strong>The Saboteur:</strong> A partner who intentionally ruins special occasions or milestones out of deep-seated jealousy or a need for control.</li>
+            </ul>
+
+            <h2>Part 5: The Psychological Defenses & Abusers</h2>
+            <ul>
+                <li><strong>Gaslighter:</strong> An abuser who systematically manipulates their partner into questioning their own memory and sanity.</li>
+                <li><strong>The Narcissist:</strong> An individual entirely consumed by their own ego, completely lacking in empathy for the collateral damage they cause.</li>
+                <li><strong>The Stonewaller:</strong> A partner who uses the silent treatment as a weapon to punish and control the other person.</li>
+                <li><strong>The Isolator:</strong> A controlling partner who systematically cuts you off from your friends, family, and support network.</li>
+                <li><strong>Energy Vampire:</strong> A partner who constantly complains and drains the emotional bandwidth of everyone around them.</li>
+                <li><strong>The Scorekeeper:</strong> A partner who treats every favor like a transactional debt that must be repaid with interest.</li>
+                <li><strong>The Deflector:</strong> A master of manipulation who immediately changes the subject to your past mistakes whenever they are caught in a lie.</li>
+                <li><strong>The Emotional Blackmailer:</strong> A partner who threatens self-harm or public ruin to trap you from leaving them.</li>
+                <li><strong>The Critic:</strong> Someone who masks their verbal abuse and continuous put-downs as "just being honest."</li>
+                <li><strong>The Martyr:</strong> A partner who aggressively takes on extra burdens just to guilt-trip you about how much they sacrifice.</li>
+                <li><strong>The One-Upper:</strong> A person who invalidates your experiences by constantly claiming they went through something much worse.</li>
+                <li><strong>The Interrogator:</strong> A highly insecure partner who demands a minute-by-minute breakdown of your daily activities.</li>
+                <li><strong>The Peacemaker:</strong> A chronic people-pleaser who will lie or betray their own values just to avoid a confrontation.</li>
+                <li><strong>The Secret Keeper:</strong> A partner who lives a highly partitioned life, keeping massive elements of their past entirely hidden.</li>
+                <li><strong>The Illusionist:</strong> A partner whose entire public persona is a flawless, highly curated lie masking a dark private reality.</li>
+                <li><strong>The Instigator:</strong> Someone who subtly plants seeds of doubt or jealousy, sitting back to watch the ensuing chaos.</li>
+                <li><strong>The Apologist:</strong> A partner who delivers perfectly rehearsed, tearful apologies but never actually changes their behavior.</li>
+                <li><strong>The Boundary Crasher:</strong> A person who views your "No" not as a rule, but as a challenge to be aggressively overcome.</li>
+                <li><strong>The Alpha-Faker:</strong> A deeply insecure man who attempts to project dominance through aggression, confusing fear with respect.</li>
+                <li><strong>The Serial Monogamist:</strong> A person terrified of being single who immediately jumps from one long-term commitment to the next without healing.</li>
+            </ul>
+
+            <h2>Part 6: The Status Symbols & The Anchors (The Green Flags)</h2>
+            <ul>
+                <li><strong>Proverbial Woman:</strong> The ultimate standard. A woman of profound competence, moral integrity, and independence who brings absolute peace to her household.</li>
+                <li><strong>Trophy Wife / Husband:</strong> A highly attractive partner chosen primarily to boost the social status and public image of a wealthier spouse.</li>
+                <li><strong>Wifey / Hubby:</strong> A partner who exhibits the loyalty, resilience, and stability required for a successful long-term marriage.</li>
+                <li><strong>Wifey Material:</strong> A woman who demonstrates exceptional domestic competence, emotional maturity, and foundational loyalty.</li>
+                <li><strong>Sugar-Daddy / Sugar-Momma:</strong> An older, wealthy individual who strictly buys the time and physical affection of a younger partner.</li>
+                <li><strong>Hustler:</strong> A relentless opportunist who views every romantic connection as a potential business transaction or stepping stone.</li>
+                <li><strong>Around The Way Girl:</strong> A relatable, grounded, and loyal woman who embodies the authentic, unpretentious culture of her neighborhood.</li>
+                <li><strong>Girl Next Door:</strong> The archetype of a safe, reliable, friendly partner who lacks the chaotic, unpredictable drama of a "siren."</li>
+                <li><strong>Bachelor / Bachelorette:</strong> An unmarried individual fully embracing their autonomy, peace, and independence.</li>
+                <li><strong>Eligible:</strong> A highly desirable, financially and emotionally stable prospect actively seeking a true partnership.</li>
+                <li><strong>The De-escalator:</strong> A mature partner who prioritizes resolving the issue over "winning" the argument.</li>
+                <li><strong>The Anchor:</strong> A highly conscientious, disciplined partner who creates a profound sense of security in the home.</li>
+                <li><strong>The Sovereign:</strong> An independent individual who maintains their own identity and does not rely on a partner for basic emotional regulation.</li>
+                <li><strong>The True Teammate:</strong> A rare, emotionally mature partner who views the relationship as an unbreakable partnership against the world.</li>
+            </ul>
+
+            <blockquote>
+                "When you finally learn how to name the behavior, you stop making excuses for the person."
+            </blockquote>
+
+            <div class="tags">
+                <h2>Tags</h2>
+                <a class="tag" href="#">Lexicon</a>
+                <a class="tag" href="#">Archetypes</a>
+                <a class="tag" href="#">Behavioral Profiling</a>
+            </div>
+
+            <div class="related">
+                <h2>Related Guides</h2>
+                <ul>
+                    <li><a href="https://luckypikas.github.io/loveqna/CONTENTS/archetypes-and-slang.html">The Archetypes of Attraction: LoveQnA Lexicon</a></li>
+                    <li><a href="https://luckypikas.github.io/loveqna/CONTENTS/character-profiles-1.html">Character Profiles: Recognizing Hidden Traits</a></li>
+                </ul>
+            </div>
+
+            <div class="page-nav">
+                <a href="https://luckypikas.github.io/loveqna/CONTENTS/character-profiles-1.html">← Previous Article</a>
+                <a href="#top">↑ Back to Top</a>
+                <a href="https://luckypikas.github.io/loveqna/index.html">Home →</a>
+            </div>
+
+        </div>
+    </main>
+
+</div>
+
+<footer>
+    © 2026 LoveQnA Library | Lucky Pikas Studios
+</footer>
+
+</body>
+</html>
