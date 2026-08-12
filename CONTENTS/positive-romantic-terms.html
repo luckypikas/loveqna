@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positive Romantic Vocabulary | LoveQnA</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #FFF8E7;
+            color: #1A1A1A;
+            line-height: 1.8;
+        }
+
+        /* ---------------- HEADER ---------------- */
+        header {
+            background: white;
+            border-bottom: 1px solid #ddd;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 18px 40px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            color: #501A1A;
+        }
+
+        nav {
+            display: flex;
+            gap: 25px;
+        }
+
+        nav a {
+            color: #1A1A1A;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #501A1A;
+        }
+
+        /* ---------------- LAYOUT ---------------- */
+        .container {
+            display: flex;
+            min-height: 100vh;
+        }
+
+        /* ---------------- SIDEBAR ---------------- */
+        .sidebar {
+            width: 240px;
+            background: white;
+            border-right: 1px solid #ddd;
+            padding: 25px;
+        }
+
+        .sidebar h3 {
+            color: #501A1A;
+            margin-bottom: 20px;
+        }
+
+        .sidebar a {
+            display: block;
+            color: #1A1A1A;
+            text-decoration: none;
+            margin-bottom: 14px;
+        }
+
+        .sidebar a:hover {
+            color: #501A1A;
+        }
+
+        /* ---------------- ARTICLE ---------------- */
+        main {
+            flex: 1;
+            padding: 45px;
+        }
+
+        .breadcrumb {
+            font-size: 14px;
+            margin-bottom: 20px;
+            color: #666;
+        }
+
+        .article {
+            background: white;
+            border-radius: 12px;
+            padding: 40px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, .08);
+        }
+
+        .article h1 {
+            color: #501A1A;
+            margin-bottom: 10px;
+            font-size: 28px;
+        }
+
+        .meta {
+            color: #777;
+            font-size: 14px;
+            margin-bottom: 35px;
+        }
+
+        .article h2 {
+            margin-top: 40px;
+            color: #501A1A;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 5px;
+        }
+
+        .article h3 {
+            margin-top: 25px;
+            color: #333;
+        }
+
+        .article p {
+            margin-top: 20px;
+        }
+
+        .article ul, .article ol {
+            margin-top: 15px;
+            margin-bottom: 20px;
+            padding-left: 40px;
+        }
+
+        .article li {
+            margin-bottom: 12px;
+        }
+
+        /* Highlight terms in the dictionary list */
+        .article li strong {
+            color: #501A1A;
+        }
+
+        .list-spacer {
+            list-style: none;
+            height: 25px;
+        }
+
+        .article li a {
+            color: #1e90ff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .article li a:hover {
+            color: #ff4757;
+            text-decoration: underline;
+        }
+
+        blockquote {
+            border-left: 5px solid #501A1A;
+            padding-left: 20px;
+            margin: 30px 0;
+            font-style: italic;
+            background-color: #f9f9f9;
+            padding: 15px 20px;
+        }
+
+        /* ---------------- TAGS ---------------- */
+        .tags {
+            margin-top: 50px;
+        }
+
+        .tag {
+            display: inline-block;
+            background: #501A1A;
+            color: white;
+            padding: 8px 14px;
+            border-radius: 20px;
+            margin: 5px;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        /* ---------------- NAVIGATION ---------------- */
+        .page-nav {
+            margin-top: 60px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .page-nav a {
+            text-decoration: none;
+            background: #501A1A;
+            color: white;
+            padding: 12px 20px;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+
+        /* ---------------- FOOTER ---------------- */
+        footer {
+            text-align: center;
+            padding: 40px;
+            color: #777;
+        }
+
+        /* ---------------- MOBILE ---------------- */
+        @media(max-width: 900px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .sidebar {
+                width: 100%;
+                border-right: none;
+                border-bottom: 1px solid #ddd;
+            }
+
+            main {
+                padding: 20px;
+            }
+
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+
+<body id="top">
+
+    <header>
+        <div class="logo">LoveQnA</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="https://poe.com/NOLA-LoveQnA" target="_blank">BOT</a>
+            <a href="https://github.com/luckypikas/loveqna/wiki">Wiki</a>
+            <a href="https://luckypikas.github.io/loveqna/dictionary.html">Dictionary</a>
+            <a href="https://luckypikas.github.io/loveqna/archives.html">Archives</a>
+            <a href="https://luckypikas.github.io/loveqna/about.html">About LoveQnA</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <aside class="sidebar">
+            <h3>CONTENTS</h3>
+            <a href="https://luckypikas.github.io/loveqna/">LoveQnA</a>
+            <a href="https://luckypikas.github.io/loveqna/contents.html">Contents Page</a>
+            <a href="https://luckypikas.github.io/loveqna/dictionary.html">Dictionary</a>
+            <a href="https://luckypikas.github.io/loveqna/relationship-health.html">Relationship Stress</a>
+            <a href="https://loveqna.substack.com/">LoveQnA Articles</a>
+            <a href="https://www.youtube.com/@loveqnablog">LoveQnA Videos</a>
+            <a href="https://github.com/luckypikas/loveqna/wiki">Wiki</a>
+            <a href="https://poe.com/NOLA-LoveQnA">NOLA</a>
+            <a href="https://luckypikas.github.io/loveqna/vibe-control.html">Vibe Control Links</a>
+            <a href="https://luckypikas.github.io/loveqna/legacy-dynasty.html">Legacy/Dynasty Links</a>
+            <a href="https://luckypikas.github.io/loveqna/ebooks.html">Ebooks</a>
+            <a href="https://luckypikas.github.io/loveqna/ai-personas.html">A.I. Personas</a>
+            <a href="https://luckypikas.github.io/loveqna/luckypika-studios.html">LoveQnA Documentaries</a>
+            <a href="https://luckypikas.github.io/loveqna/resources.html">Resources</a>
+        </aside>
+
+        <main>
+            <div class="breadcrumb">
+                Home > Library > Dictionary > Positive Romantic Terms
+            </div>
+
+            <div class="article">
+                <h1>Relationship Vocabulary: Healthy Dynamics & Green Flags</h1>
+                <div class="meta">• Dictionary Database • Updated: August 2026</div>
+
+                <p>
+                    This vocabulary collection focuses on positive, emotionally healthy, and constructive attitudes in romantic relationships. It provides language to describe care, support, respect, attraction, and long‑term commitment across every stage—pursuit, early romance, established relationships, marriage, and reconciliation after conflict. 
+                </p>
+                <p>
+                    These terms help readers articulate not just how love feels, but how it behaves: how people show up for each other, invest, communicate, and build emotionally safe, sustainable partnerships. The goal is to give couples and observers a precise, uplifting vocabulary for describing healthy relationship dynamics—the essential "baseline for sanity" required to spot red flags later on.
+                </p>
+
+                <h2>Positive Terms & Definitions</h2>
+                <ol>
+                    <li><strong>Affectionate:</strong> Openly expressing warmth, tenderness, and physical or verbal love in everyday interactions.</li>
+                    <li><strong>Attentive:</strong> Consistently noticing and responding to a partner’s needs, moods, and comfort.</li>
+                    <li><strong>Devoted:</strong> Deeply committed and loyal, showing long‑term dedication to the relationship.</li>
+                    <li><strong>Supportive:</strong> Actively encouraging a partner’s goals, growth, and emotional well‑being.</li>
+                    <li><strong>Nurturing:</strong> Providing care, reassurance, and emotional nourishment, especially during stress or hardship.</li>
+                    <li><strong>Respectful:</strong> Treating a partner’s boundaries, opinions, and autonomy with genuine regard and consideration.</li>
+                    <li><strong>Empathetic:</strong> Understanding and emotionally resonating with a partner’s feelings and inner experience.</li>
+                    <li><strong>Reassuring:</strong> Offering calm, steady comfort that reduces anxiety and reinforces emotional safety.</li>
+                    <li><strong>Trusting:</strong> Willing to rely on a partner’s integrity, intentions, and consistency without constant suspicion.</li>
+                    <li><strong>Trustworthy:</strong> Consistently honest, reliable, and aligned in words and actions over time.</li>
+                    <li><strong>Intentional:</strong> Acting with clear purpose and thoughtfulness in building and maintaining the relationship.</li>
+                    <li><strong>Warm:</strong> Exuding emotional openness, kindness, and a welcoming presence.</li>
+                    <li><strong>Playful:</strong> Bringing lightness, humor, and fun into the relationship without undermining seriousness.</li>
+                    <li><strong>Affirming:</strong> Regularly acknowledging a partner’s value, strengths, and efforts through words and actions.</li>
+                    <li><strong>Loyal:</strong> Remaining faithful and committed, even when circumstances are difficult or tempting.</li>
+                    <li><strong>Patient:</strong> Willing to move at a partner’s pace, allowing time for growth, healing, or adjustment.</li>
+                    <li><strong>Generous:</strong> Freely giving time, energy, attention, and care without keeping score.</li>
+                    <li><strong>Considerate:</strong> Thinking ahead about how choices will affect a partner and adjusting behavior accordingly.</li>
+                    <li><strong>Reliable:</strong> Showing up consistently, following through on promises, and being emotionally and practically dependable.</li>
+                    <li><strong>Encouraging:</strong> Actively motivating a partner to pursue their goals, dreams, and personal development.</li>
+                    <li><strong>Affirmative:</strong> Responding with “yes energy”—open to connection, collaboration, and mutual effort.</li>
+                    <li><strong>Grateful:</strong> Expressing appreciation for the relationship, the partner’s efforts, and shared experiences.</li>
+                    <li><strong>Protective (Healthy):</strong> Safeguarding a partner’s well‑being without controlling or limiting their autonomy.</li>
+                    <li><strong>Collaborative:</strong> Approaching decisions and problems as a team rather than as opponents.</li>
+                    <li><strong>Reconciliatory:</strong> Seeking to repair conflict, restore harmony, and rebuild trust after disagreements.</li>
+                    <li><strong>Vulnerable:</strong> Willing to share fears, hopes, and insecurities honestly, inviting deeper intimacy.</li>
+                    <li><strong>Affectionately Curious:</strong> Genuinely interested in a partner’s inner world, thoughts, and feelings.</li>
+                    <li><strong>Committed:</strong> Intentionally choosing the relationship and its future, not just the present moment.</li>
+                    <li><strong>Stable:</strong> Emotionally consistent, predictable, and grounded, creating a sense of safety.</li>
+                    <li><strong>Honoring:</strong> Treating the relationship and the partner as something precious and worthy of care.</li>
+                </ol>
+
+                <h2>The LoveQnA "Green Flag" Expansion</h2>
+                <ol start="31">
+                    <li><strong>Reciprocal:</strong> Ensuring that effort, care, and emotional labor are equally exchanged, not one-sided.</li>
+                    <li><strong>Accountable:</strong> Readily taking responsibility for one’s actions and mistakes without defensiveness or blame-shifting.</li>
+                    <li><strong>Transparent:</strong> Operating with total honesty and openness; having nothing to hide.</li>
+                    <li><strong>Attuned:</strong> Being highly observant and naturally in sync with a partner’s emotional state.</li>
+                    <li><strong>Interdependent:</strong> Maintaining a strong, connected partnership while preserving individual independence and healthy boundaries.</li>
+                    <li><strong>Secure:</strong> Feeling fundamentally safe in the relationship without the constant need for reassurance or fear of abandonment.</li>
+                    <li><strong>Equitable:</strong> Ensuring fairness in how decisions, finances, and household responsibilities are shared.</li>
+                    <li><strong>Forgiving:</strong> Willing to let go of resolved past grievances rather than weaponizing them in future arguments.</li>
+                    <li><strong>Steadfast:</strong> Unshaken by external chaos; remaining a solid, predictable anchor during hard times.</li>
+                    <li><strong>Gracious:</strong> Giving a partner the benefit of the doubt and responding to their minor flaws with kindness rather than criticism.</li>
+                    <li><strong>Responsive:</strong> Actively answering a partner's bids for connection, whether they are reaching out for conversation, affection, or help.</li>
+                    <li><strong>Present:</strong> Mentally and emotionally locked into the current moment with a partner, without digital or external distractions.</li>
+                    <li><strong>Uplifting:</strong> Naturally elevating a partner's mood and self-esteem through positive interaction.</li>
+                    <li><strong>Cherishing:</strong> Treating a partner not just with love, but with a deep sense of value and preciousness.</li>
+                    <li><strong>Communicative:</strong> Expressing needs, boundaries, and desires openly rather than expecting a partner to mind-read.</li>
+                </ol>
+
+                <div class="tags">
+                    <h2>Directory Tags</h2>
+                    <a class="tag" href="#">Dictionary</a>
+                    <a class="tag" href="#">Vocabulary</a>
+                    <a class="tag" href="#">Green Flags</a>
+                    <a class="tag" href="#">Healthy Dynamics</a>
+                </div>
+
+                <div class="page-nav">
+                    <a href="contents.html">← Back to Contents</a>
+                    <a href="#top">↑ Back to Top</a>
+                    <a href="dictionary.html">Next: Main Dictionary →</a>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        © 2026 LoveQnA | Lucky Pikas Studios
+    </footer>
+
+</body>
+</html>
