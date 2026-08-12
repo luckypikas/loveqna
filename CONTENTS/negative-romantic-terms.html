@@ -1,209 +1,487 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>Relationship Vocabulary: Emotional States, Attitudes & Slang (100+ Terms)</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relationship Vocabulary | LoveQnA</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #FFF8E7;
+            color: #1A1A1A;
+            line-height: 1.8;
+        }
+
+        /* ---------------- HEADER ---------------- */
+        header {
+            background: white;
+            border-bottom: 1px solid #ddd;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 18px 40px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            color: #501A1A;
+        }
+
+        nav {
+            display: flex;
+            gap: 25px;
+        }
+
+        nav a {
+            color: #1A1A1A;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #501A1A;
+        }
+
+        /* ---------------- LAYOUT ---------------- */
+        .container {
+            display: flex;
+            min-height: 100vh;
+        }
+
+        /* ---------------- SIDEBAR ---------------- */
+        .sidebar {
+            width: 240px;
+            background: white;
+            border-right: 1px solid #ddd;
+            padding: 25px;
+        }
+
+        .sidebar h3 {
+            color: #501A1A;
+            margin-bottom: 20px;
+        }
+
+        .sidebar a {
+            display: block;
+            color: #1A1A1A;
+            text-decoration: none;
+            margin-bottom: 14px;
+        }
+
+        .sidebar a:hover {
+            color: #501A1A;
+        }
+
+        /* ---------------- ARTICLE ---------------- */
+        main {
+            flex: 1;
+            padding: 45px;
+        }
+
+        .breadcrumb {
+            font-size: 14px;
+            margin-bottom: 20px;
+            color: #666;
+        }
+
+        .article {
+            background: white;
+            border-radius: 12px;
+            padding: 40px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, .08);
+        }
+
+        .article h1 {
+            color: #501A1A;
+            margin-bottom: 10px;
+            font-size: 28px;
+        }
+
+        .meta {
+            color: #777;
+            font-size: 14px;
+            margin-bottom: 35px;
+        }
+
+        .article h2 {
+            margin-top: 40px;
+            color: #501A1A;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 5px;
+        }
+
+        .article h3 {
+            margin-top: 25px;
+            color: #333;
+        }
+
+        .article p {
+            margin-top: 20px;
+        }
+
+        .article ul, .article ol {
+            margin-top: 15px;
+            margin-bottom: 20px;
+            padding-left: 40px;
+        }
+
+        .article li {
+            margin-bottom: 12px;
+        }
+
+        /* Highlight terms in the dictionary list */
+        .article li strong {
+            color: #501A1A;
+        }
+
+        .list-spacer {
+            list-style: none;
+            height: 25px;
+        }
+
+        .article li a {
+            color: #1e90ff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .article li a:hover {
+            color: #ff4757;
+            text-decoration: underline;
+        }
+
+        blockquote {
+            border-left: 5px solid #501A1A;
+            padding-left: 20px;
+            margin: 30px 0;
+            font-style: italic;
+            background-color: #f9f9f9;
+            padding: 15px 20px;
+        }
+
+        /* ---------------- TAGS ---------------- */
+        .tags {
+            margin-top: 50px;
+        }
+
+        .tag {
+            display: inline-block;
+            background: #501A1A;
+            color: white;
+            padding: 8px 14px;
+            border-radius: 20px;
+            margin: 5px;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        /* ---------------- NAVIGATION ---------------- */
+        .page-nav {
+            margin-top: 60px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .page-nav a {
+            text-decoration: none;
+            background: #501A1A;
+            color: white;
+            padding: 12px 20px;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+
+        /* ---------------- FOOTER ---------------- */
+        footer {
+            text-align: center;
+            padding: 40px;
+            color: #777;
+        }
+
+        /* ---------------- MOBILE ---------------- */
+        @media(max-width: 900px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .sidebar {
+                width: 100%;
+                border-right: none;
+                border-bottom: 1px solid #ddd;
+            }
+
+            main {
+                padding: 20px;
+            }
+
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+        }
+    </style>
 </head>
-<body>
 
-  <h1>Relationship Vocabulary: Emotional States, Attitudes & Slang (100+ Terms)</h1>
+<body id="top">
 
-  <h2>Introduction</h2>
-  <p>
-    This vocabulary collection provides readers with precise, emotionally intelligent language to describe how one person feels about another across every relationship stage — pursuit, early romance, new relationships, long‑term commitment, conflict, detachment, breakups, and divorce.
-    It includes core English emotional terms, behavioral attitudes, modern relationship slang, British expressions, Spanish expressions, and psychological descriptors.
-    The purpose of this list is to help readers articulate emotional states, romantic intentions, behavioral patterns, and relationship dynamics with clarity and accuracy.
-    These terms support LoveQnA’s mission of improving communication, emotional understanding, and relationship literacy.
-  </p>
+    <header>
+        <div class="logo">LoveQnA</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="https://poe.com/NOLA-LoveQnA" target="_blank">BOT</a>
+            <a href="https://github.com/luckypikas/loveqna/wiki">Wiki</a>
+            <a href="https://luckypikas.github.io/loveqna/dictionary.html">Dictionary</a>
+            <a href="https://luckypikas.github.io/loveqna/archives.html">Archives</a>
+            <a href="https://luckypikas.github.io/loveqna/about.html">About LoveQnA</a>
+        </nav>
+    </header>
 
-  <hr>
+    <div class="container">
+        <aside class="sidebar">
+            <h3>CONTENTS</h3>
+            <a href="https://luckypikas.github.io/loveqna/">LoveQnA</a>
+            <a href="https://luckypikas.github.io/loveqna/contents.html">Contents Page</a>
+            <a href="https://luckypikas.github.io/loveqna/dictionary.html">Dictionary</a>
+            <a href="https://luckypikas.github.io/loveqna/relationship-health.html">Relationship Stress</a>
+            <a href="https://loveqna.substack.com/">LoveQnA Articles</a>
+            <a href="https://www.youtube.com/@loveqnablog">LoveQnA Videos</a>
+            <a href="https://github.com/luckypikas/loveqna/wiki">Wiki</a>
+            <a href="https://poe.com/NOLA-LoveQnA">NOLA</a>
+            <a href="https://luckypikas.github.io/loveqna/vibe-control.html">Vibe Control Links</a>
+            <a href="https://luckypikas.github.io/loveqna/legacy-dynasty.html">Legacy/Dynasty Links</a>
+            <a href="https://luckypikas.github.io/loveqna/ebooks.html">Ebooks</a>
+            <a href="https://luckypikas.github.io/loveqna/ai-personas.html">A.I. Personas</a>
+            <a href="https://luckypikas.github.io/loveqna/luckypika-studios.html">LoveQnA Documentaries</a>
+            <a href="https://luckypikas.github.io/loveqna/resources.html">Resources</a>
+        </aside>
 
-  <h2>Core English Terms & Definitions</h2>
+        <main>
+            <div class="breadcrumb">
+                Home > Library > Dictionary > Relationship Vocabulary
+            </div>
 
-  <h3>Stage 1: Pursuit & Early Romance</h3>
-  <ol>
-    <li><strong>Infatuated:</strong> Intensely, often foolishly, absorbed in a short-lived passion or attraction.</li>
-    <li><strong>Smitten:</strong> Suddenly and severely struck by strong feelings of love or affection.</li>
-    <li><strong>Captivated:</strong> Completely charmed and held under a spell by another's presence or personality.</li>
-    <li><strong>Enamored:</strong> Filled with a feeling of love, admiration, or intense fondness.</li>
-    <li><strong>Obsessed:</strong> Continually preoccupied with someone to an unhealthy, dominant degree.</li>
-    <li><strong>Protective:</strong> Showing a strong desire to keep someone safe from harm or hurt.</li>
-    <li><strong>Possessive:</strong> Demanding total attention and devotion; unwilling to share someone with others.</li>
-    <li><strong>Receptive:</strong> Open, welcoming, and responsive to another person's romantic advances.</li>
-    <li><strong>Intentional:</strong> Acting with clear purpose and serious effort toward building a relationship.</li>
-    <li><strong>Territorial:</strong> Guarding a partner or potential partner aggressively against perceived rivals.</li>
-    <li><strong>Eager:</strong> Displaying keen interest and excitement to spend time together.</li>
-    <li><strong>Hesitant:</strong> Holding back due to uncertainty, fear of rejection, or caution.</li>
-    <li><strong>Insecure:</strong> Lacking confidence in oneself or in the stability of the other person's interest.</li>
-    <li><strong>Overzealous:</strong> Excessively enthusiastic or forceful in pursuing someone, often creating discomfort.</li>
-    <li><strong>Idealizing:</strong> Viewing someone as perfect while ignoring their flaws or red flags.</li>
-  </ol>
+            <div class="article">
+                <h1>Relationship Vocabulary: Emotional States, Attitudes & Slang</h1>
+                <div class="meta">• Dictionary Database • Updated: August 2026</div>
 
-  <h3>Stage 2: Commitment, Marriage & Long-Term</h3>
-  <ol start="16">
-    <li><strong>Devoted:</strong> Deeply committed, loyal, and steadfast in care and affection.</li>
-    <li><strong>Nurturing:</strong> Actively supporting, encouraging, and fostering a partner’s growth and well-being.</li>
-    <li><strong>Complacent:</strong> Overly comfortable and lazy in a relationship, taking a partner's presence for granted.</li>
-    <li><strong>Affectionate:</strong> Readily showing warmth, tenderness, and physical or verbal love.</li>
-    <li><strong>Attentive:</strong> Consistently mindful of a partner’s needs, feelings, and comfort.</li>
-    <li><strong>Resolute:</strong> Unwavering in commitment, regardless of difficulties or external pressures.</li>
-    <li><strong>Adoring:</strong> Looking upon someone with deep reverence, pride, and warmth.</li>
-    <li><strong>Protective:</strong> Actively shielding a spouse or partner from external distress or hardship.</li>
-    <li><strong>Distant:</strong> Physically present but emotionally removed, cold, or uncommunmunicative.</li>
-    <li><strong>Resentful:</strong> Harboring bitter, ongoing anger over past grievances or unaddressed imbalances.</li>
-    <li><strong>Dependable:</strong> Consistently reliable and supportive through all circumstances.</li>
-    <li><strong>Enmeshed:</strong> Lacking healthy emotional boundaries, leading to over-dependence on each other.</li>
-    <li><strong>Supportive:</strong> Actively uplifting a partner's personal goals and emotional health.</li>
-    <li><strong>Watchful:</strong> Closely observing a partner’s moods or actions, sometimes out of care or anxiety.</li>
-    <li><strong>Doting:</strong> Showing excessive love, indulgence, and fondness.</li>
-  </ol>
+                <p>
+                    This vocabulary collection provides readers with precise, emotionally intelligent language to describe how one person feels about another across every relationship stage — pursuit, early romance, new relationships, long‑term commitment, conflict, detachment, breakups, and divorce.
+                </p>
+                <p>
+                    It includes core English emotional terms, behavioral attitudes, modern relationship slang, British expressions, Spanish expressions, and psychological descriptors. The purpose of this list is to help readers articulate emotional states, romantic intentions, behavioral patterns, and relationship dynamics with clarity and accuracy. These terms support LoveQnA’s mission of improving communication, emotional understanding, and relationship literacy.
+                </p>
 
-  <h3>Stage 3: Conflict, Detachment & Breaking Up</h3>
-  <ol start="31">
-    <li><strong>Dismissive:</strong> Treating a partner's feelings or opinions as unimportant or unworthy of consideration.</li>
-    <li><strong>Nonchalant:</strong> Appearing calm, unconcerned, or indifferent, often masking true feelings or signaling disinterest.</li>
-    <li><strong>Ignoring:</strong> Intentionally tuning out or failing to acknowledge a partner’s presence or messages.</li>
-    <li><strong>Stonewalling:</strong> Completely refusing to communicate, cooperate, or engage during discussions.</li>
-    <li><strong>Cold:</strong> Lacking warmth, empathy, or emotional responsiveness.</li>
-    <li><strong>Passive-Aggressive:</strong> Expressing anger or disapproval indirectly rather than addressing it openly.</li>
-    <li><strong>Ambivalent:</strong> Having simultaneous, conflicting feelings of love and detachment toward someone.</li>
-    <li><strong>Bitter:</strong> Feeling intense animosity and disappointment following a betrayal or breakup.</li>
-    <li><strong>Detached:</strong> Emotionally disconnected, viewing the relationship from a distant, clinical perspective.</li>
-    <li><strong>Vindictive:</strong> Seeking revenge or wishing harm upon a partner after a fallout.</li>
-    <li><strong>Exasperated:</strong> Completely frustrated and drained by ongoing unresolved conflict.</li>
-    <li><strong>Apathetic:</strong> Showing a total lack of feeling, concern, or enthusiasm toward the relationship.</li>
-    <li><strong>Contemptuous:</strong> Looking down on a partner with deep disrespect or disgust.</li>
-    <li><strong>Guarded:</strong> Keeping emotional walls high to protect oneself from potential hurt.</li>
-    <li><strong>Unreachable:</strong> Emotionally inaccessible, no matter how hard the other person tries to connect.</li>
-  </ol>
+                <h2>Core English Terms & Definitions</h2>
 
-  <hr>
+                <h3>Stage 1: Pursuit & Early Romance</h3>
+                <ol>
+                    <li><strong>Infatuated:</strong> Intensely, often foolishly, absorbed in a short-lived passion or attraction.</li>
+                    <li><strong>Smitten:</strong> Suddenly and severely struck by strong feelings of love or affection.</li>
+                    <li><strong>Captivated:</strong> Completely charmed and held under a spell by another's presence or personality.</li>
+                    <li><strong>Enamored:</strong> Filled with a feeling of love, admiration, or intense fondness.</li>
+                    <li><strong>Obsessed:</strong> Continually preoccupied with someone to an unhealthy, dominant degree.</li>
+                    <li><strong>Protective:</strong> Showing a strong desire to keep someone safe from harm or hurt.</li>
+                    <li><strong>Possessive:</strong> Demanding total attention and devotion; unwilling to share someone with others.</li>
+                    <li><strong>Receptive:</strong> Open, welcoming, and responsive to another person's romantic advances.</li>
+                    <li><strong>Intentional:</strong> Acting with clear purpose and serious effort toward building a relationship.</li>
+                    <li><strong>Territorial:</strong> Guarding a partner or potential partner aggressively against perceived rivals.</li>
+                    <li><strong>Eager:</strong> Displaying keen interest and excitement to spend time together.</li>
+                    <li><strong>Hesitant:</strong> Holding back due to uncertainty, fear of rejection, or caution.</li>
+                    <li><strong>Insecure:</strong> Lacking confidence in oneself or in the stability of the other person's interest.</li>
+                    <li><strong>Overzealous:</strong> Excessively enthusiastic or forceful in pursuing someone, often creating discomfort.</li>
+                    <li><strong>Idealizing:</strong> Viewing someone as perfect while ignoring their flaws or red flags.</li>
+                </ol>
 
-  <h2>Modern Slang & Relationship Dynamics</h2>
-  <ol start="46">
-    <li><strong>Ghosting:</strong> Abruptly cutting off all communication without explanation or warning.</li>
-    <li><strong>Breadcrumbing:</strong> Sending sporadic, minimal flirtatious signals to keep someone interested without real commitment.</li>
-    <li><strong>Love-Bombing:</strong> Overwhelming someone with excessive affection and grand gestures early on to manipulate them.</li>
-    <li><strong>Simping:</strong> Displaying excessive submission or devotion to someone in hopes of gaining their favor.</li>
-    <li><strong>Benchmarking / Benching:</strong> Keeping a potential partner on standby while pursuing preferred options.</li>
-    <li><strong>Orbiting:</strong> Cutting off direct contact but continuing to view and react to their social media activity.</li>
-    <li><strong>Gaslighting:</strong> Manipulating a partner into questioning their own sanity, memory, or perception of reality.</li>
-    <li><strong>Cushioning:</strong> Maintaining several side contacts to soften the blow if a current relationship fails.</li>
-    <li><strong>Pocketing:</strong> Hiding a romantic partner from friends, family, and social media.</li>
-    <li><strong>Zombieing:</strong> Resurfacing with a random message long after ghosting a person completely.</li>
-    <li><strong>Soft-Launching:</strong> Discretely hinting at a new partner on social media without revealing their face or identity.</li>
-    <li><strong>Situationship:</strong> A romantic or sexual relationship that lacks clear definition, boundaries, or commitment.</li>
-    <li><strong>Ick:</strong> A sudden surge of disgust triggered by a minor habit or behavior of a partner.</li>
-    <li><strong>Micro-Cheating:</strong> Small, secretive actions that breach emotional trust without crossing into full infidelity.</li>
-    <li><strong>Clingy:</strong> Remaining overly attached and demanding constant attention or physical presence.</li>
-  </ol>
+                <h3>Stage 2: Commitment, Marriage & Long-Term</h3>
+                <ol start="16">
+                    <li><strong>Devoted:</strong> Deeply committed, loyal, and steadfast in care and affection.</li>
+                    <li><strong>Nurturing:</strong> Actively supporting, encouraging, and fostering a partner’s growth and well-being.</li>
+                    <li><strong>Complacent:</strong> Overly comfortable and lazy in a relationship, taking a partner's presence for granted.</li>
+                    <li><strong>Affectionate:</strong> Readily showing warmth, tenderness, and physical or verbal love.</li>
+                    <li><strong>Attentive:</strong> Consistently mindful of a partner’s needs, feelings, and comfort.</li>
+                    <li><strong>Resolute:</strong> Unwavering in commitment, regardless of difficulties or external pressures.</li>
+                    <li><strong>Adoring:</strong> Looking upon someone with deep reverence, pride, and warmth.</li>
+                    <li><strong>Protective:</strong> Actively shielding a spouse or partner from external distress or hardship.</li>
+                    <li><strong>Distant:</strong> Physically present but emotionally removed, cold, or uncommunicative.</li>
+                    <li><strong>Resentful:</strong> Harboring bitter, ongoing anger over past grievances or unaddressed imbalances.</li>
+                    <li><strong>Dependable:</strong> Consistently reliable and supportive through all circumstances.</li>
+                    <li><strong>Enmeshed:</strong> Lacking healthy emotional boundaries, leading to over-dependence on each other.</li>
+                    <li><strong>Supportive:</strong> Actively uplifting a partner's personal goals and emotional health.</li>
+                    <li><strong>Watchful:</strong> Closely observing a partner’s moods or actions, sometimes out of care or anxiety.</li>
+                    <li><strong>Doting:</strong> Showing excessive love, indulgence, and fondness.</li>
+                </ol>
 
-  <hr>
+                <h3>Stage 3: Conflict, Detachment & Breaking Up</h3>
+                <ol start="31">
+                    <li><strong>Dismissive:</strong> Treating a partner's feelings or opinions as unimportant or unworthy of consideration.</li>
+                    <li><strong>Nonchalant:</strong> Appearing calm, unconcerned, or indifferent, often masking true feelings or signaling disinterest.</li>
+                    <li><strong>Ignoring:</strong> Intentionally tuning out or failing to acknowledge a partner’s presence or messages.</li>
+                    <li><strong>Stonewalling:</strong> Completely refusing to communicate, cooperate, or engage during discussions.</li>
+                    <li><strong>Cold:</strong> Lacking warmth, empathy, or emotional responsiveness.</li>
+                    <li><strong>Passive-Aggressive:</strong> Expressing anger or disapproval indirectly rather than addressing it openly.</li>
+                    <li><strong>Ambivalent:</strong> Having simultaneous, conflicting feelings of love and detachment toward someone.</li>
+                    <li><strong>Bitter:</strong> Feeling intense animosity and disappointment following a betrayal or breakup.</li>
+                    <li><strong>Detached:</strong> Emotionally disconnected, viewing the relationship from a distant, clinical perspective.</li>
+                    <li><strong>Vindictive:</strong> Seeking revenge or wishing harm upon a partner after a fallout.</li>
+                    <li><strong>Exasperated:</strong> Completely frustrated and drained by ongoing unresolved conflict.</li>
+                    <li><strong>Apathetic:</strong> Showing a total lack of feeling, concern, or enthusiasm toward the relationship.</li>
+                    <li><strong>Contemptuous:</strong> Looking down on a partner with deep disrespect or disgust.</li>
+                    <li><strong>Guarded:</strong> Keeping emotional walls high to protect oneself from potential hurt.</li>
+                    <li><strong>Unreachable:</strong> Emotionally inaccessible, no matter how hard the other person tries to connect.</li>
+                </ol>
 
-  <h2>British English Terms & Expressions</h2>
-  <ol start="61">
-    <li><strong>Fancying (Someone):</strong> Holding a strong physical or romantic attraction toward someone.</li>
-    <li><strong>Besotted:</strong> Completely intoxicated and foolishly blind with love or admiration.</li>
-    <li><strong>Gutted:</strong> Feeling deeply heartbroken, devastated, or crushed by a breakup or disappointment.</li>
-    <li><strong>Chuffed:</strong> Delighted and thoroughly pleased with a partner or relationship development.</li>
-    <li><strong>Stand-Offish:</strong> Distant, cold, and deliberately unfriendly or aloof.</li>
-    <li><strong>Proper Smitten:</strong> Completely overwhelmed by romantic attraction (used emphatically).</li>
-    <li><strong>Offish:</strong> Slightly cold, irritable, or emotionally withdrawn without a clear reason.</li>
-    <li><strong>Cracking On:</strong> Actively pursuing a romantic interest with directness and momentum.</li>
-    <li><strong>Mugging Off:</strong> Treating a partner disrespectfully or making them look foolish in front of others.</li>
-    <li><strong>Pining:</strong> Longing intensely and melancholically for someone who is absent or unrequited.</li>
-    <li><strong>Devastated:</strong> Emotionally ruined following a split or betrayal.</li>
-    <li><strong>Dodgy:</strong> Unreliable, suspicious, or untrustworthy in motives or behavior.</li>
-    <li><strong>Sour:</strong> Moody, bitter, and holding a bad attitude toward a partner.</li>
-    <li><strong>Keen:</strong> Highly enthusiastic, eager, and interested in building something together.</li>
-    <li><strong>Narky:</strong> Moody, defensive, and easily annoyed during romantic interactions.</li>
-  </ol>
+                <h2>Modern Slang & Relationship Dynamics</h2>
+                <ol start="46">
+                    <li><strong>Ghosting:</strong> Abruptly cutting off all communication without explanation or warning.</li>
+                    <li><strong>Breadcrumbing:</strong> Sending sporadic, minimal flirtatious signals to keep someone interested without real commitment.</li>
+                    <li><strong>Love-Bombing:</strong> Overwhelming someone with excessive affection and grand gestures early on to manipulate them.</li>
+                    <li><strong>Simping:</strong> Displaying excessive submission or devotion to someone in hopes of gaining their favor.</li>
+                    <li><strong>Benchmarking / Benching:</strong> Keeping a potential partner on standby while pursuing preferred options.</li>
+                    <li><strong>Orbiting:</strong> Cutting off direct contact but continuing to view and react to their social media activity.</li>
+                    <li><strong>Gaslighting:</strong> Manipulating a partner into questioning their own sanity, memory, or perception of reality.</li>
+                    <li><strong>Cushioning:</strong> Maintaining several side contacts to soften the blow if a current relationship fails.</li>
+                    <li><strong>Pocketing:</strong> Hiding a romantic partner from friends, family, and social media.</li>
+                    <li><strong>Zombieing:</strong> Resurfacing with a random message long after ghosting a person completely.</li>
+                    <li><strong>Soft-Launching:</strong> Discretely hinting at a new partner on social media without revealing their face or identity.</li>
+                    <li><strong>Situationship:</strong> A romantic or sexual relationship that lacks clear definition, boundaries, or commitment.</li>
+                    <li><strong>Ick:</strong> A sudden surge of disgust triggered by a minor habit or behavior of a partner.</li>
+                    <li><strong>Micro-Cheating:</strong> Small, secretive actions that breach emotional trust without crossing into full infidelity.</li>
+                    <li><strong>Clingy:</strong> Remaining overly attached and demanding constant attention or physical presence.</li>
+                </ol>
 
-  <hr>
+                <h2>British English Terms & Expressions</h2>
+                <ol start="61">
+                    <li><strong>Fancying (Someone):</strong> Holding a strong physical or romantic attraction toward someone.</li>
+                    <li><strong>Besotted:</strong> Completely intoxicated and foolishly blind with love or admiration.</li>
+                    <li><strong>Gutted:</strong> Feeling deeply heartbroken, devastated, or crushed by a breakup or disappointment.</li>
+                    <li><strong>Chuffed:</strong> Delighted and thoroughly pleased with a partner or relationship development.</li>
+                    <li><strong>Stand-Offish:</strong> Distant, cold, and deliberately unfriendly or aloof.</li>
+                    <li><strong>Proper Smitten:</strong> Completely overwhelmed by romantic attraction (used emphatically).</li>
+                    <li><strong>Offish:</strong> Slightly cold, irritable, or emotionally withdrawn without a clear reason.</li>
+                    <li><strong>Cracking On:</strong> Actively pursuing a romantic interest with directness and momentum.</li>
+                    <li><strong>Mugging Off:</strong> Treating a partner disrespectfully or making them look foolish in front of others.</li>
+                    <li><strong>Pining:</strong> Longing intensely and melancholically for someone who is absent or unrequited.</li>
+                    <li><strong>Devastated:</strong> Emotionally ruined following a split or betrayal.</li>
+                    <li><strong>Dodgy:</strong> Unreliable, suspicious, or untrustworthy in motives or behavior.</li>
+                    <li><strong>Sour:</strong> Moody, bitter, and holding a bad attitude toward a partner.</li>
+                    <li><strong>Keen:</strong> Highly enthusiastic, eager, and interested in building something together.</li>
+                    <li><strong>Narky:</strong> Moody, defensive, and easily annoyed during romantic interactions.</li>
+                </ol>
 
-  <h2>Spanish Terms & Expressions</h2>
-  <ol start="76">
-    <li><strong>Enamorado/a:</strong> Deeply in love with someone.</li>
-    <li><strong>Tragado/a:</strong> (Slang) Head-over-heels obsessed or infatuated with a person.</li>
-    <li><strong>Despechado/a:</strong> Harboring bitterness, hurt, and resentment after being rejected or dumped.</li>
-    <li><strong>Desinteresado/a:</strong> Completely unconcerned, indifferent, or lacking interest.</li>
-    <li><strong>Tóxico/a:</strong> Exhibiting unhealthy, controlling, or emotionally damaging behaviors.</li>
-    <li><strong>Celoso/a:</strong> Possessive, jealous, or fearful of losing affection to someone else.</li>
-    <li><strong>Cariñoso/a:</strong> Naturally warm, affectionate, and physically tender.</li>
-    <li><strong>Frío/a:</strong> Emotionally cold, unfeeling, or distant.</li>
-    <li><strong>Apasionado/a:</strong> Driven by intense, fiery emotion and romantic passion.</li>
-    <li><strong>Protector/a:</strong> Shielding and watching over a partner's well-being.</li>
-    <li><strong>Distante:</strong> Emotionally or physically removed from the relationship.</li>
-    <li><strong>Cansado/a:</strong> Exhausted by ongoing issues or draining relationship dynamics.</li>
-    <li><strong>Comprometido/a:</strong> Fully dedicated and loyal to the relationship.</li>
-    <li><strong>Incondicional:</strong> Offering love and support without limitations or strict conditions.</li>
-    <li><strong>Indiferente:</strong> Displaying zero care, concern, or emotional reaction.</li>
-  </ol>
+                <h2>Spanish Terms & Expressions</h2>
+                <ol start="76">
+                    <li><strong>Enamorado/a:</strong> Deeply in love with someone.</li>
+                    <li><strong>Tragado/a:</strong> (Slang) Head-over-heels obsessed or infatuated with a person.</li>
+                    <li><strong>Despechado/a:</strong> Harboring bitterness, hurt, and resentment after being rejected or dumped.</li>
+                    <li><strong>Desinteresado/a:</strong> Completely unconcerned, indifferent, or lacking interest.</li>
+                    <li><strong>Tóxico/a:</strong> Exhibiting unhealthy, controlling, or emotionally damaging behaviors.</li>
+                    <li><strong>Celoso/a:</strong> Possessive, jealous, or fearful of losing affection to someone else.</li>
+                    <li><strong>Cariñoso/a:</strong> Naturally warm, affectionate, and physically tender.</li>
+                    <li><strong>Frío/a:</strong> Emotionally cold, unfeeling, or distant.</li>
+                    <li><strong>Apasionado/a:</strong> Driven by intense, fiery emotion and romantic passion.</li>
+                    <li><strong>Protector/a:</strong> Shielding and watching over a partner's well-being.</li>
+                    <li><strong>Distante:</strong> Emotionally or physically removed from the relationship.</li>
+                    <li><strong>Cansado/a:</strong> Exhausted by ongoing issues or draining relationship dynamics.</li>
+                    <li><strong>Comprometido/a:</strong> Fully dedicated and loyal to the relationship.</li>
+                    <li><strong>Incondicional:</strong> Offering love and support without limitations or strict conditions.</li>
+                    <li><strong>Indiferente:</strong> Displaying zero care, concern, or emotional reaction.</li>
+                </ol>
 
-  <hr>
+                <h2>Nuanced & Psychological Attitudes</h2>
+                <ol start="91">
+                    <li><strong>Ambivalent:</strong> Oscillating between wanting to stay and wanting to leave.</li>
+                    <li><strong>Avoidant:</strong> Reflexively pulling away from emotional intimacy to maintain independence.</li>
+                    <li><strong>Hypervigilant:</strong> Constantly watching for signs of betrayal, rejection, or shifting moods.</li>
+                    <li><strong>Codependent:</strong> Deriving one's entire self-worth and mood from a partner's state.</li>
+                    <li><strong>Validating:</strong> Actively acknowledging and affirming a partner's emotional reality.</li>
+                    <li><strong>Defensive:</strong> Rebuffing criticism by counter-attacking or refusing accountability.</li>
+                    <li><strong>Possessive:</strong> Viewing a partner as property rather than an autonomous individual.</li>
+                    <li><strong>Empathetic:</strong> Deeply understanding and sharing a partner's emotional state.</li>
+                    <li><strong>Transactional:</strong> Viewing relationship efforts as a tit-for-tat trade rather than unconditional care.</li>
+                    <li><strong>Dismissive-Avoidant:</strong> Defensively equating intimacy with a loss of independence.</li>
+                    <li><strong>Anxious:</strong> Fearing abandonment and constantly seeking reassurance of a partner's love.</li>
+                    <li><strong>Overprotective:</strong> Smothering a partner under the guise of keeping them safe.</li>
+                    <li><strong>Oblivious:</strong> Entirely unaware of a partner's dissatisfaction or emotional distress.</li>
+                    <li><strong>Manipulative:</strong> Skillfully influencing a partner for personal advantage or control.</li>
+                    <li><strong>Indulgent:</strong> Overly lenient, pampering a partner despite negative behavior.</li>
+                    <li><strong>Controlled:</strong> Keeping strict command over one's emotions to avoid vulnerability.</li>
+                    <li><strong>Reconciliatory:</strong> Eager to restore harmony and resolve arguments quickly.</li>
+                    <li><strong>Submissive:</strong> Yielding total decision-making and direction to a partner.</li>
+                    <li><strong>Domineering:</strong> Asserting strict control and authority over a partner's choices.</li>
+                    <li><strong>Selfless:</strong> Prioritizing a partner’s needs above one's own comfort.</li>
+                    <li><strong>Unforgiving:</strong> Unwilling to release past mistakes, holding permanent grudges.</li>
+                    <li><strong>Warm:</strong> Exuding comfort, accessibility, and genuine care.</li>
+                    <li><strong>Guarded:</strong> Maintaining psychological distance to avoid potential vulnerability.</li>
+                    <li><strong>Detached:</strong> Completely disengaged from the outcome of the relationship.</li>
+                    <li><strong>Unwavering:</strong> Steadfast, steady, and constant regardless of external obstacles.</li>
+                </ol>
 
-  <h2>Nuanced & Psychological Attitudes</h2>
-  <ol start="91">
-    <li><strong>Ambivalent:</strong> Oscillating between wanting to stay and wanting to leave.</li>
-    <li><strong>Avoidant:</strong> Reflexively pulling away from emotional intimacy to maintain independence.</li>
-    <li><strong>Hypervigilant:</strong> Constantly watching for signs of betrayal, rejection, or shifting moods.</li>
-    <li><strong>Codependent:</strong> Deriving one's entire self-worth and mood from a partner's state.</li>
-    <li><strong>Validating:</strong> Actively acknowledging and affirming a partner's emotional reality.</li>
-    <li><strong>Defensive:</strong> Rebuffing criticism by counter-attacking or refusing accountability.</li>
-    <li><strong>Possessive:</strong> Viewing a partner as property rather than an autonomous individual.</li>
-    <li><strong>Empathetic:</strong> Deeply understanding and sharing a partner's emotional state.</li>
-    <li><strong>Transactional:</strong> Viewing relationship efforts as a tit-for-tat trade rather than unconditional care.</li>
-    <li><strong>Dismissive-Avoidant:</strong> Defensively equating intimacy with a loss of independence.</li>
-    <li><strong>Anxious:</strong> Fearing abandonment and constantly seeking reassurance of a partner's love.</li>
-    <li><strong>Overprotective:</strong> Smothering a partner under the guise of keeping them safe.</li>
-    <li><strong>Oblivious:</strong> Entirely unaware of a partner's dissatisfaction or emotional distress.</li>
-    <li><strong>Manipulative:</strong> Skillfully influencing a partner for personal advantage or control.</li>
-    <li><strong>Indulgent:</strong> Overly lenient, pampering a partner despite negative behavior.</li>
-    <li><strong>Controlled:</strong> Keeping strict command over one's emotions to avoid vulnerability.</li>
-    <li><strong>Reconciliatory:</strong> Eager to restore harmony and resolve arguments quickly.</li>
-    <li><strong>Submissive:</strong> Yielding total decision-making and direction to a partner.</li>
-    <li><strong>Domineering:</strong> Asserting strict control and authority over a partner's choices.</li>
-    <li><strong>Selfless:</strong> Prioritizing a partner’s needs above one's own comfort.</li>
-    <li><strong>Unforgiving:</strong> Unwilling to release past mistakes, holding permanent grudges.</li>
-    <li><strong>Warm:</strong> Exuding comfort, accessibility, and genuine care.</li>
-    <li><strong>Guarded:</strong> Maintaining psychological distance to avoid potential vulnerability.</li>
-    <li><strong>Detached:</strong> Completely disengaged from the outcome of the relationship.</li>
-    <li><strong>Unwavering:</strong> Steadfast, steady, and constant regardless of external obstacles.</li>
-  </ol>
+                <h2>Conflict & Hostility Vocabulary Expansion</h2>
+                <p>These additional terms focus on hostility, cruelty, sabotage, and aggressive relational attitudes, expanding the vocabulary for describing harmful or antagonistic dynamics.</p>
+                <ol start="116">
+                    <li><strong>Hate:</strong> Intense, enduring hostility or aversion toward someone, often accompanied by a desire for distance or harm.</li>
+                    <li><strong>Spiteful:</strong> Motivated by a desire to hurt, offend, or upset someone, even at personal cost.</li>
+                    <li><strong>Hostile:</strong> Openly aggressive, unfriendly, or antagonistic in tone, behavior, or attitude.</li>
+                    <li><strong>Malicious:</strong> Intending to cause harm, pain, or damage through words, actions, or schemes.</li>
+                    <li><strong>Antagonistic:</strong> Habitually opposing, provoking, or challenging someone, often escalating conflict.</li>
+                    <li><strong>Sabotaging:</strong> Deliberately undermining a relationship, reputation, or effort through hidden or overt actions.</li>
+                    <li><strong>Undermining:</strong> Subtly eroding someone’s confidence, authority, or credibility over time.</li>
+                    <li><strong>Backstabbing:</strong> Pretending loyalty while secretly betraying or harming someone behind their back.</li>
+                    <li><strong>Taunting:</strong> Mocking or provoking someone with cruel or teasing remarks intended to upset them.</li>
+                    <li><strong>Teasing:</strong> Playfully or cruelly making fun of someone; can be lighthearted or hurtful depending on intent.</li>
+                    <li><strong>Mocking:</strong> Imitating or ridiculing someone in a way that belittles or disrespects them.</li>
+                    <li><strong>Ridiculing:</strong> Publicly or privately making someone seem foolish, inferior, or laughable.</li>
+                    <li><strong>Belittling:</strong> Minimizing someone’s feelings, achievements, or worth through dismissive comments.</li>
+                    <li><strong>Demeaning:</strong> Treating someone in a way that lowers their dignity, status, or self-respect.</li>
+                    <li><strong>Condescending:</strong> Speaking or acting as though one is superior, treating the other as lesser or unintelligent.</li>
+                    <li><strong>Humiliating:</strong> Causing deep embarrassment or shame, often in front of others.</li>
+                    <li><strong>Provoking:</strong> Intentionally inciting anger, reaction, or conflict through words or actions.</li>
+                    <li><strong>Intimidating:</strong> Using fear, pressure, or dominance to control or silence someone.</li>
+                    <li><strong>Menacing:</strong> Projecting a threatening presence or attitude that suggests potential harm.</li>
+                    <li><strong>Cruel:</strong> Willingly causing pain or suffering without empathy or remorse.</li>
+                </ol>
 
-  <hr>
+                <div class="tags">
+                    <h2>Directory Tags</h2>
+                    <a class="tag" href="#">Dictionary</a>
+                    <a class="tag" href="#">Vocabulary</a>
+                    <a class="tag" href="#">Psychology</a>
+                    <a class="tag" href="#">Forensics</a>
+                </div>
 
-  <h2>Conflict & Hostility Vocabulary Expansion</h2>
-  <p>These additional terms focus on hostility, cruelty, sabotage, and aggressive relational attitudes, expanding the vocabulary for describing harmful or antagonistic dynamics.</p>
-  <ol start="101">
-    <li><strong>Hate:</strong> Intense, enduring hostility or aversion toward someone, often accompanied by a desire for distance or harm.</li>
-    <li><strong>Spiteful:</strong> Motivated by a desire to hurt, offend, or upset someone, even at personal cost.</li>
-    <li><strong>Hostile:</strong> Openly aggressive, unfriendly, or antagonistic in tone, behavior, or attitude.</li>
-    <li><strong>Malicious:</strong> Intending to cause harm, pain, or damage through words, actions, or schemes.</li>
-    <li><strong>Antagonistic:</strong> Habitually opposing, provoking, or challenging someone, often escalating conflict.</li>
-    <li><strong>Sabotaging:</strong> Deliberately undermining a relationship, reputation, or effort through hidden or overt actions.</li>
-    <li><strong>Undermining:</strong> Subtly eroding someone’s confidence, authority, or credibility over time.</li>
-    <li><strong>Backstabbing:</strong> Pretending loyalty while secretly betraying or harming someone behind their back.</li>
-    <li><strong>Taunting:</strong> Mocking or provoking someone with cruel or teasing remarks intended to upset them.</li>
-    <li><strong>Teasing:</strong> Playfully or cruelly making fun of someone; can be lighthearted or hurtful depending on intent.</li>
-    <li><strong>Mocking:</strong> Imitating or ridiculing someone in a way that belittles or disrespects them.</li>
-    <li><strong>Ridiculing:</strong> Publicly or privately making someone seem foolish, inferior, or laughable.</li>
-    <li><strong>Belittling:</strong> Minimizing someone’s feelings, achievements, or worth through dismissive comments.</li>
-    <li><strong>Demeaning:</strong> Treating someone in a way that lowers their dignity, status, or self-respect.</li>
-    <li><strong>Condescending:</strong> Speaking or acting as though one is superior, treating the other as lesser or unintelligent.</li>
-    <li><strong>Humiliating:</strong> Causing deep embarrassment or shame, often in front of others.</li>
-    <li><strong>Provoking:</strong> Intentionally inciting anger, reaction, or conflict through words or actions.</li>
-    <li><strong>Intimidating:</strong> Using fear, pressure, or dominance to control or silence someone.</li>
-    <li><strong>Menacing:</strong> Projecting a threatening presence or attitude that suggests potential harm.</li>
-    <li><strong>Cruel:</strong> Willingly causing pain or suffering without empathy or remorse.</li>
-  </ol>
+                <div class="page-nav">
+                    <a href="contents.html">← Back to Contents</a>
+                    <a href="#top">↑ Back to Top</a>
+                    <a href="relationship-health.html">Next Article →</a>
+                </div>
+            </div>
+        </main>
+    </div>
 
-  <hr>
-
-  <footer>
-    <p>LoveQnA Library — Relationship Vocabulary & Emotional Literacy</p>
-    <p>© Lucky Pikas — Built for clarity, truth, and emotional intelligence.</p>
-  </footer>
+    <footer>
+        © 2026 LoveQnA | Lucky Pikas Studios
+    </footer>
 
 </body>
 </html>
