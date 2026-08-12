@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Contents - Page 2 | LoveQnA</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #FFF8E7;
+            color: #1A1A1A;
+            line-height: 1.8;
+        }
+
+        /* ---------------- HEADER ---------------- */
+        header {
+            background: white;
+            border-bottom: 1px solid #ddd;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 18px 40px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            color: #501A1A;
+        }
+
+        nav {
+            display: flex;
+            gap: 25px;
+        }
+
+        nav a {
+            color: #1A1A1A;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #501A1A;
+        }
+
+        /* ---------------- LAYOUT ---------------- */
+        .container {
+            display: flex;
+            min-height: 100vh;
+        }
+
+        /* ---------------- SIDEBAR ---------------- */
+        .sidebar {
+            width: 240px;
+            background: white;
+            border-right: 1px solid #ddd;
+            padding: 25px;
+        }
+
+        .sidebar h3 {
+            color: #501A1A;
+            margin-bottom: 20px;
+        }
+
+        .sidebar a {
+            display: block;
+            color: #1A1A1A;
+            text-decoration: none;
+            margin-bottom: 14px;
+        }
+
+        .sidebar a:hover {
+            color: #501A1A;
+        }
+
+        /* ---------------- ARTICLE ---------------- */
+        main {
+            flex: 1;
+            padding: 45px;
+        }
+
+        .breadcrumb {
+            font-size: 14px;
+            margin-bottom: 20px;
+            color: #666;
+        }
+
+        .article {
+            background: white;
+            border-radius: 12px;
+            padding: 40px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, .08);
+        }
+
+        .article h1 {
+            color: #501A1A;
+            margin-bottom: 10px;
+        }
+
+        .meta {
+            color: #777;
+            font-size: 14px;
+            margin-bottom: 35px;
+        }
+
+        .article h2 {
+            margin-top: 40px;
+            color: #501A1A;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 5px;
+        }
+
+        .article h3 {
+            margin-top: 25px;
+            color: #333;
+        }
+
+        .article p {
+            margin-top: 20px;
+        }
+
+        .article ul {
+            margin-top: 15px;
+            margin-bottom: 20px;
+            padding-left: 40px;
+        }
+
+        .article li {
+            margin-bottom: 12px;
+        }
+
+        .list-spacer {
+            list-style: none;
+            height: 25px;
+        }
+
+        .article li a {
+            color: #1e90ff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .article li a:hover {
+            color: #ff4757;
+            text-decoration: underline;
+        }
+
+        blockquote {
+            border-left: 5px solid #501A1A;
+            padding-left: 20px;
+            margin: 30px 0;
+            font-style: italic;
+            background-color: #f9f9f9;
+            padding: 15px 20px;
+        }
+
+        /* ---------------- TAGS ---------------- */
+        .tags {
+            margin-top: 50px;
+        }
+
+        .tag {
+            display: inline-block;
+            background: #501A1A;
+            color: white;
+            padding: 8px 14px;
+            border-radius: 20px;
+            margin: 5px;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        /* ---------------- NAVIGATION ---------------- */
+        .page-nav {
+            margin-top: 60px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .page-nav a {
+            text-decoration: none;
+            background: #501A1A;
+            color: white;
+            padding: 12px 20px;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+
+        /* ---------------- FOOTER ---------------- */
+        footer {
+            text-align: center;
+            padding: 40px;
+            color: #777;
+        }
+
+        /* ---------------- MOBILE ---------------- */
+        @media(max-width: 900px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .sidebar {
+                width: 100%;
+                border-right: none;
+                border-bottom: 1px solid #ddd;
+            }
+
+            main {
+                padding: 20px;
+            }
+
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+
+<body id="top">
+
+    <header>
+        <div class="logo">LoveQnA</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="https://poe.com/NOLA-LoveQnA" target="_blank">BOT</a>
+            <a href="https://github.com/luckypikas/loveqna/wiki">Wiki</a>
+            <a href="https://luckypikas.github.io/loveqna/dictionary.html">Dictionary</a>
+            <a href="https://luckypikas.github.io/loveqna/archives.html">Archives</a>
+            <a href="https://luckypikas.github.io/loveqna/about.html">About LoveQnA</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <aside class="sidebar">
+            <h3>CONTENTS</h3>
+            <a href="https://luckypikas.github.io/loveqna/">LoveQnA</a>
+            <a href="https://luckypikas.github.io/loveqna/contents.html">Contents Page</a>
+            <a href="https://luckypikas.github.io/loveqna/dictionary.html">Dictionary</a>
+            <a href="https://luckypikas.github.io/loveqna/relationship-health.html">Relationship Stress</a>
+            <a href="https://loveqna.substack.com/">LoveQnA Articles</a>
+            <a href="https://www.youtube.com/@loveqnablog">LoveQnA Videos</a>
+            <a href="https://github.com/luckypikas/loveqna/wiki">Wiki</a>
+            <a href="https://poe.com/NOLA-LoveQnA">NOLA</a>
+            <a href="https://luckypikas.github.io/loveqna/vibe-control.html">Vibe Control Links</a>
+            <a href="https://luckypikas.github.io/loveqna/legacy-dynasty.html">Legacy/Dynasty Links</a>
+            <a href="https://luckypikas.github.io/loveqna/ebooks.html">Ebooks</a>
+            <a href="https://luckypikas.github.io/loveqna/ai-personas.html">A.I. Personas</a>
+            <a href="https://luckypikas.github.io/loveqna/luckypika-studios.html">LoveQnA Documentaries</a>
+            <a href="https://luckypikas.github.io/loveqna/resources.html">Resources</a>
+        </aside>
+
+        <main>
+            <div class="breadcrumb">
+                Home > Library > Contents Page 2
+            </div>
+
+            <div class="article">
+                <h1>LoveQnA Library Contents — Vol. II</h1>
+                <div class="meta">• Master Directory Page 2 • Updated: August 2026</div>
+
+                <p>
+                    Welcome to Volume II of the LoveQnA Master Directory. This archive expands our behavioral forensic investigations, relationship blueprints, and psychological case files. 
+                </p>
+
+                <h2>Directory Archives</h2>
+                <ul>
+                    <!-- Block 1 -->
+                    <li><a href="CONTENTS/loveqna.html">loveqna</a></li>
+                    <li><a href="CONTENTS/loveqna.html">loveqna</a></li>
+                    <li><a href="CONTENTS/loveqna.html">loveqna</a></li>
+                    <li><a href="CONTENTS/loveqna.html">loveqna</a></li>
+                    <li><a href="CONTENTS/loveqna.html">loveqna</a></li>
+
+                    <li class="list-spacer"></li>
+
+                    <!-- Block 2 -->
+                    <li><a href="CONTENTS/loveqna.html">loveqna</a></li>
+                    <li><a href="CONTENTS/loveqna.html">loveqna</a></li>
+                    <li><a href="CONTENTS/loveqna.html">loveqna</a></li>
+                    <li><a href="CONTENTS/loveqna.html">loveqna</a></li>
+                    <li><a href="CONTENTS/loveqna.html">loveqna</a></li>
+
+                    <li class="list-spacer"></li>
+
+                    <!-- Block 3 -->
+                    <li><a href="CONTENTS/loveqna.html">loveqna</a></li>
+                    <li><a href="CONTENTS/loveqna.html">loveqna</a></li>
+                    <li><a href="CONTENTS/loveqna.html">loveqna</a></li>
+                    <li><a href="CONTENTS/loveqna.html">loveqna</a></li>
+                    <li><a href="CONTENTS/loveqna.html">loveqna</a></li>
+
+                    <li class="list-spacer"></li>
+
+                    <!-- Block 4 -->
+                    <li><a href="CONTENTS/loveqna.html">loveqna</a></li>
+                    <li><a href="CONTENTS/loveqna.html">loveqna</a></li>
+                    <li><a href="CONTENTS/loveqna.html">loveqna</a></li>
+                    <li><a href="CONTENTS/loveqna.html">loveqna</a></li>
+                    <li><a href="CONTENTS/loveqna.html">loveqna</a></li>
+
+                    <li class="list-spacer"></li>
+
+                    <!-- Block 5 -->
+                    <li><a href="CONTENTS/loveqna.html">loveqna</a></li>
+                    <li><a href="CONTENTS/loveqna.html">loveqna</a></li>
+                    <li><a href="CONTENTS/loveqna.html">loveqna</a></li>
+                    <li><a href="CONTENTS/loveqna.html">loveqna</a></li>
+                    <li><a href="CONTENTS/loveqna.html">loveqna</a></li>
+
+                    <li class="list-spacer"></li>
+
+                    <!-- Block 6 -->
+                    <li><a href="CONTENTS/loveqna.html">loveqna</a></li>
+                    <li><a href="CONTENTS/loveqna.html">loveqna</a></li>
+                    <li><a href="CONTENTS/loveqna.html">loveqna</a></li>
+                    <li><a href="CONTENTS/loveqna.html">loveqna</a></li>
+                    <li><a href="CONTENTS/loveqna.html">loveqna</a></li>
+
+                    <li class="list-spacer"></li>
+
+                    <!-- Block 7 -->
+                    <li><a href="CONTENTS/loveqna.html">loveqna</a></li>
+                    <li><a href="CONTENTS/loveqna.html">loveqna</a></li>
+                    <li><a href="CONTENTS/loveqna.html">loveqna</a></li>
+                    <li><a href="CONTENTS/loveqna.html">loveqna</a></li>
+                    <li><a href="CONTENTS/loveqna.html">loveqna</a></li>
+
+                    <li class="list-spacer"></li>
+
+                    <!-- Block 8 -->
+                    <li><a href="CONTENTS/loveqna.html">loveqna</a></li>
+                    <li><a href="CONTENTS/loveqna.html">loveqna</a></li>
+                    <li><a href="CONTENTS/loveqna.html">loveqna</a></li>
+                    <li><a href="CONTENTS/loveqna.html">loveqna</a></li>
+                    <li><a href="CONTENTS/loveqna.html">loveqna</a></li>
+
+                    <li class="list-spacer"></li>
+
+                    <!-- Block 9 -->
+                    <li><a href="CONTENTS/loveqna.html">loveqna</a></li>
+                    <li><a href="CONTENTS/loveqna.html">loveqna</a></li>
+                    <li><a href="CONTENTS/loveqna.html">loveqna</a></li>
+                    <li><a href="CONTENTS/loveqna.html">loveqna</a></li>
+                    <li><a href="CONTENTS/loveqna.html">loveqna</a></li>
+
+                    <li class="list-spacer"></li>
+
+                    <!-- Block 10 -->
+                    <li><a href="CONTENTS/loveqna.html">loveqna</a></li>
+                    <li><a href="CONTENTS/loveqna.html">loveqna</a></li>
+                    <li><a href="CONTENTS/loveqna.html">loveqna</a></li>
+                    <li><a href="CONTENTS/loveqna.html">loveqna</a></li>
+                    <li><a href="CONTENTS/loveqna.html">loveqna</a></li>
+                </ul>
+
+                <h2>LoveQnA Network & Resources</h2>
+                <p>Expand your forensic knowledge and connect with our broader network of digital ecosystems:</p>
+                <ul>
+                    <li><a href="https://poe.com/NOLA-LoveQnA" target="_blank">NOLA — The LoveQnA A.I. Profiler</a></li>
+                    <li><a href="https://loveqna.substack.com/" target="_blank">LoveQnA Substack (Newsletters & Deep Dives)</a></li>
+                    <li><a href="https://loveqna.blogspot.com/" target="_blank">LoveQnA on Blogger</a></li>
+                    <li><a href="https://payhip.com/luckypikas" target="_blank">LoveQnA E-Books & Payhip Store</a></li>
+                    <li><a href="https://luckypikas.blogspot.com/" target="_blank">Lucky Pikas Studios (Media & Documentaries)</a></li>
+                </ul>
+
+                <div class="tags">
+                    <h2>Directory Tags</h2>
+                    <a class="tag" href="#">Directory</a>
+                    <a class="tag" href="#">Resources</a>
+                    <a class="tag" href="#">Network</a>
+                </div>
+
+                <div class="page-nav">
+                    <a href="contents.html">← Back to Page 1</a>
+                    <a href="#top">↑ Back to Top</a>
+                    <a href="dictionary.html">Dictionary →</a>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        © 2026 LoveQnA | Lucky Pikas Studios
+    </footer>
+
+</body>
+</html>
